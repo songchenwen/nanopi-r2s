@@ -41,6 +41,15 @@ jobs:
         run: |
           . lean_patches.sh
 
+      - name: Download Clash Binary
+        run: |
+          CLASH_VERSION=v0.19.0
+          mkdir -p friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
+          cd friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
+          wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
+          gunzip clash.gz
+          chmod +x clash
+
       - name: Build Config
         run: |
           cd friendlywrt-rk3328
