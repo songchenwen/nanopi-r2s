@@ -1,0 +1,95 @@
+name: r2s_lean
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+      
+      - name: Init Env
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          . init_env.sh
+      
+      - name: Friendlywrt Source
+        run: |
+          . friendlywrt_source.sh
+
+      - name: Patch Kernel
+        run: |
+          . patch_kernel_5.4.22.sh
+
+      - name: Rebase on Lean
+        run: |
+          . rebase_on_lean.sh
+      
+      - name: Add Packages to Lean
+        run: |
+          . add_packages_to_lean.sh
+
+      - name: Patches for Lean
+        run: |
+          . lean_patches.sh
+
+      - name: Build Config
+        run: |
+          cd friendlywrt-rk3328
+          cat configs/config_rk3328 | grep "TARGET" > ../rk3328.config
+          cat ../minimal_config.seed >> ../rk3328.config
+          cat ../rk3328.config > configs/config_rk3328
+          cat configs/config_rk3328
+      
+      - name: Build Friendlywrt
+        run: |
+          cd friendlywrt-rk3328
+          sed -i 's/set -eu/set -u/' scripts/mk-friendlywrt.sh
+          ./build.sh nanopi_r2s.mk
+      
+      - name: Zip Files
+        run: |
+          gzip friendlywrt-rk3328/out/*.img
+
+      - name: Assemble Artifact
+        id: assemble_artifact
+        run: |
+          rm -rf ./artifact/
+          mkdir -p ./artifact/
+          cd friendlywrt-rk3328/friendlywrt;./scripts/diffconfig.sh > ../../artifact/config.seed;cd ../../
+          mv friendlywrt-rk3328/out/*img* ./artifact/
+          cp friendlywrt-rk3328/friendlywrt/.config ./artifact/
+          zip -r artifact.zip ./artifact/
+          release_tag="R2S-Lean-$(date +%Y-%m-%d)"
+          echo "##[set-output name=release_tag;]$release_tag"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.sec_token }}
+        with:
+          tag_name: ${{ steps.assemble_artifact.outputs.release_tag }}
+          release_name: auto build ${{ steps.assemble_artifact.outputs.release_tag }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.sec_token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./artifact.zip
+          asset_name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM.zip
+          asset_content_type: application/zip
+
