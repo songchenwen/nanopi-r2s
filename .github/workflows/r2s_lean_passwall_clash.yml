@@ -75,8 +75,8 @@ jobs:
           mkdir -p ./artifact/
           cd friendlywrt-rk3328/friendlywrt;./scripts/diffconfig.sh > ../../artifact/config.seed;cd ../../
           mv friendlywrt-rk3328/out/*img* ./artifact/
-          cp friendlywrt-rk3328/friendlywrt/.config ./artifact/
-          zip -r artifact.zip ./artifact/
+          cp friendlywrt-rk3328/friendlywrt/.config ./artifact/full.config
+          zip -r artifact.zip ./artifact/*
           release_tag="R2S-Lean-$(date +%Y-%m-%d)"
           echo "##[set-output name=release_tag;]$release_tag"
 
@@ -87,7 +87,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.sec_token }}
         with:
           tag_name: ${{ steps.assemble_artifact.outputs.release_tag }}
-          release_name: auto build ${{ steps.assemble_artifact.outputs.release_tag }}
+          release_name: ${{ steps.assemble_artifact.outputs.release_tag }}
           draft: false
           prerelease: false
 
