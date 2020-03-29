@@ -1,25 +1,40 @@
 name: r2s_lean
 
 on:
+  repository_dispatch:
   push:
     branches: 
       - master
+    paths:
+      - '.github/workflows/r2s_lean_passwall_clash.yml'
+      - '*.sh'
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    env:
+      GITHUB_TOKEN: ${{ secrets.sec_token }}
+      sec_token: ${{ secrets.sec_token }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@master
         with:
           ref: master
-      
+          fetch-depth: 0
+          token: ${{ env.sec_token }}
+
       - name: Init Env
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
           . init_env.sh
+      
+      - name: Repo Hash
+        run: |
+          ./set_repo_hash.sh Builder
       
       - name: Friendlywrt Source
         run: |
@@ -41,7 +56,13 @@ jobs:
         run: |
           . lean_patches.sh
 
+      - name: Change Log
+        id: changelog
+        run: |
+          ./changelog.sh
+
       - name: Download Clash Binary
+        if: steps.changelog.outputs.changelog != ''
         run: |
           CLASH_VERSION=v0.19.0
           mkdir -p friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
@@ -51,6 +72,7 @@ jobs:
           chmod +x clash
 
       - name: Build Config
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328
           cat configs/config_rk3328 | grep "TARGET" > ../rk3328.config
@@ -59,16 +81,19 @@ jobs:
           cat configs/config_rk3328
       
       - name: Build Friendlywrt
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328
           sed -i 's/set -eu/set -u/' scripts/mk-friendlywrt.sh
           ./build.sh nanopi_r2s.mk
       
       - name: Zip Files
+        if: steps.changelog.outputs.changelog != ''
         run: |
           gzip friendlywrt-rk3328/out/*.img
 
       - name: Assemble Artifact
+        if: steps.changelog.outputs.changelog != ''
         id: assemble_artifact
         run: |
           rm -rf ./artifact/
@@ -76,29 +101,33 @@ jobs:
           cd friendlywrt-rk3328/friendlywrt;./scripts/diffconfig.sh > ../../artifact/config.seed;cd ../../
           mv friendlywrt-rk3328/out/*img* ./artifact/
           cp friendlywrt-rk3328/friendlywrt/.config ./artifact/full.config
-          zip -r artifact.zip ./artifact/*
-          release_tag="R2S-Lean-$(date +%Y-%m-%d)"
+          zip -r artifact.zip -j artifact artifact/*
+          release_tag=${{ steps.changelog.outputs.buildtag }}
           echo "##[set-output name=release_tag;]$release_tag"
 
       - name: Create Release
+        if: steps.changelog.outputs.changelog != ''
         id: create_release
         uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.sec_token }}
         with:
           tag_name: ${{ steps.assemble_artifact.outputs.release_tag }}
           release_name: ${{ steps.assemble_artifact.outputs.release_tag }}
+          body: ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: false
 
       - name: Upload Release Asset
+        if: steps.changelog.outputs.changelog != ''
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.sec_token }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
           asset_path: ./artifact.zip
           asset_name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM.zip
           asset_content_type: application/zip
-
+    
+      - name: Push Change Log
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          git pull --rebase --autostash
+          git push
