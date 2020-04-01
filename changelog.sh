@@ -32,6 +32,14 @@ while read l; do
         oldHash=$(echo $oldHash | cut -c -7)
         if ! [ "$oldHash" == "$hash" ]; then
             title="${name} [${oldHash}..$hash]($url/compare/$oldHash..$hash)"
+            branch=master
+            if [ "$name" == "Argon" ]; then
+                branch="18.06"
+            fi
+            if [ "$name" == "FriendlyWRT" ]; then
+                branch="master-v19.07.1"
+            fi
+
             mkdir -p .temprepo
             cd .temprepo
             git init
@@ -41,8 +49,8 @@ while read l; do
 | Commit | Author | Desc |
 | :----- | :------| :--- |
 "
-            echo "Generating Change Log for $name ${oldHash}..${hash}"
-            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:'| %h | %an | %s |' ${oldHash}..${hash} ${name}/master)
+            echo "Generating Change Log for $name $branch ${oldHash}..${hash}"
+            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:"| [%h](${url}/commit/%h) | %an | %s |" ${oldHash}..${hash} ${name}/$branch)
             if [ "$table" == "" ]; then
                 body=""
             else
