@@ -1,3 +1,34 @@
+## R2S-Lean-2020-04-02-740fb83
+
+#### Builder [d760b63..740fb83](https://github.com/songchenwen/nanopi-r2s/compare/d760b63..740fb83)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [740fb83](https://github.com/songchenwen/nanopi-r2s/commit/740fb83) | songchenwen | Remove xlnetacc |
+
+
+#### Lean [f8bd6e0..9a65c3e](https://github.com/coolsnowwolf/lede/compare/f8bd6e0..9a65c3e)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [9a65c3ef](https://github.com/coolsnowwolf/lede/commit/9a65c3ef) | AmadeusGhost | treewide: revert use new procd sysupgrade variable (#4139) |
+| [e56bd418](https://github.com/coolsnowwolf/lede/commit/e56bd418) | mjyhj | luci-app-diskman: bump to 0.2.7 (#4144) |
+
+
+#### ScwPackage [f3dffb7..66e52f1](https://github.com/songchenwen/openwrt-package/compare/f3dffb7..66e52f1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [58ea9a57c](https://github.com/songchenwen/openwrt-package/commit/58ea9a57c) | Lienol | Update README.md |
+
+
+
+
+--------------
+
 ## R2S-Lean-2020-04-01-d760b63
 
 #### Builder [330d4b0..d760b63](https://github.com/songchenwen/nanopi-r2s/compare/330d4b0..d760b63)
