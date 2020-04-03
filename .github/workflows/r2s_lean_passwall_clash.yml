@@ -42,7 +42,7 @@ jobs:
 
       - name: Patch Kernel
         run: |
-          . patch_kernel_5.4.22.sh
+          . patch_kernel_5.4.sh
 
       - name: Rebase on Lean
         run: |
