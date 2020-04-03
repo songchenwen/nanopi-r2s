@@ -1,3 +1,32 @@
+## R2S-Lean-2020-04-03-740fb83
+
+#### Lean [9a65c3e..78bec3e](https://github.com/coolsnowwolf/lede/compare/9a65c3e..78bec3e)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [78bec3e9](https://github.com/coolsnowwolf/lede/commit/78bec3e9) | CN_SZTL | openssl: bump to 1.1.1f (#4153) |
+
+
+#### ScwPackage [66e52f1..ce98935](https://github.com/songchenwen/openwrt-package/compare/66e52f1..ce98935)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8676c5a5c](https://github.com/songchenwen/openwrt-package/commit/8676c5a5c) | Lienol | luci-app-timecontrol: update makefile |
+| [4f4599c5a](https://github.com/songchenwen/openwrt-package/commit/4f4599c5a) | Lienol | verysync: revert v1.3.1 |
+| [ed7c39dc3](https://github.com/songchenwen/openwrt-package/commit/ed7c39dc3) | Lienol | chinadns-ng: bump to latest version |
+| [f28a53eef](https://github.com/songchenwen/openwrt-package/commit/f28a53eef) | Lienol | luci-app-timecontrol: add new package |
+| [89b0afb7c](https://github.com/songchenwen/openwrt-package/commit/89b0afb7c) | Lienol | luci-app-timewol: add etherwake depends by default |
+| [0d9606089](https://github.com/songchenwen/openwrt-package/commit/0d9606089) | Lienol | remove mia package |
+| [02d20542e](https://github.com/songchenwen/openwrt-package/commit/02d20542e) | Lienol | ipsec: fix when flowoffload on |
+| [3c35b15dc](https://github.com/songchenwen/openwrt-package/commit/3c35b15dc) | Lienol | Update README.md |
+
+
+
+
+--------------
+
 ## R2S-Lean-2020-04-02-740fb83
 
 #### Builder [d760b63..740fb83](https://github.com/songchenwen/nanopi-r2s/compare/d760b63..740fb83)
