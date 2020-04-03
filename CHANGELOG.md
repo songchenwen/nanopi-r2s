@@ -1,3 +1,25 @@
+## R2S-Lean-2020-04-03-8eacdd5
+
+#### Builder [740fb83..8eacdd5](https://github.com/songchenwen/nanopi-r2s/compare/740fb83..8eacdd5)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8eacdd5](https://github.com/songchenwen/nanopi-r2s/commit/8eacdd5) | songchenwen | Follow Upstream |
+
+
+#### ScwPackage [ce98935..3fa6c01](https://github.com/songchenwen/openwrt-package/compare/ce98935..3fa6c01)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [e3f3880](https://github.com/songchenwen/openwrt-package/commit/e3f3880) | ShanStone | optimize passwall script & update chinadns-ng (#394) |
+
+
+
+
+--------------
+
 ## R2S-Lean-2020-04-03-740fb83
 
 #### Lean [9a65c3e..78bec3e](https://github.com/coolsnowwolf/lede/compare/9a65c3e..78bec3e)
