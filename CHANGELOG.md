@@ -1,3 +1,19 @@
+## R2S-Lean-2020-04-04-8eacdd5
+
+#### Lean [78bec3e..d0922b9](https://github.com/coolsnowwolf/lede/compare/78bec3e..d0922b9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d0922b93](https://github.com/coolsnowwolf/lede/commit/d0922b93) | lean | luci-app-ssr-plus: display log when enable socks5 server only |
+| [8faac300](https://github.com/coolsnowwolf/lede/commit/8faac300) | lean | mac80211: Update to version 5.4.27 |
+| [17ce0abd](https://github.com/coolsnowwolf/lede/commit/17ce0abd) | lean | kernel: add module for Mellanox mlx Network 10/40Gbps Driver |
+
+
+
+
+--------------
+
 ## R2S-Lean-2020-04-03-8eacdd5
 
 #### Builder [740fb83..8eacdd5](https://github.com/songchenwen/nanopi-r2s/compare/740fb83..8eacdd5)
