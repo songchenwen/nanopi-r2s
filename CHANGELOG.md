@@ -1,3 +1,27 @@
+## R2S-Lean-2020-04-04-70a1021
+
+#### Builder [8eacdd5..70a1021](https://github.com/songchenwen/nanopi-r2s/compare/8eacdd5..70a1021)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [70a1021](https://github.com/songchenwen/nanopi-r2s/commit/70a1021) | songchenwen | More Detailed Config Seed |
+
+
+#### Lean [d0922b9..d5dc714](https://github.com/coolsnowwolf/lede/compare/d0922b9..d5dc714)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d5dc714e](https://github.com/coolsnowwolf/lede/commit/d5dc714e) | NivalXer | mwlwifi: Update the 88W8964's firmware to 9.3.2.12 and fix backports version detection (#4168) |
+| [b344bfb5](https://github.com/coolsnowwolf/lede/commit/b344bfb5) | AmadeusGhost | ath10k-ct: bump to 5.4 (#4165) |
+| [7d597c53](https://github.com/coolsnowwolf/lede/commit/7d597c53) | AmadeusGhost | mac80211: switch to upstream owl-loader driver (#4164) |
+
+
+
+
+--------------
+
 ## R2S-Lean-2020-04-04-8eacdd5
 
 #### Lean [78bec3e..d0922b9](https://github.com/coolsnowwolf/lede/compare/78bec3e..d0922b9)
