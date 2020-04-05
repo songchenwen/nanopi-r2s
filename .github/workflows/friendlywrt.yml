@@ -1,4 +1,4 @@
-name: r2s_lean
+name: friendlywrt
 
 on:
   repository_dispatch:
@@ -6,7 +6,7 @@ on:
     branches: 
       - master
     paths:
-      - '.github/workflows/r2s_lean_passwall_clash.yml'
+      - '.github/workflows/friendlywrt.yml'
       - '*.sh'
   schedule:
     - cron: '0 0 * * *'
@@ -40,27 +40,49 @@ jobs:
         run: |
           . friendlywrt_source.sh
 
-      - name: Patch Kernel
+      - name: Change Feeds to Lean
         run: |
-          . patch_kernel_5.4.sh
-
-      - name: Rebase on Lean
-        run: |
-          . rebase_on_lean.sh
-      
+          cd friendlywrt-rk3328
+          git clone https://github.com/coolsnowwolf/lede
+          cd lede
+          ../../set_repo_hash.sh Lean
+          cd ../friendlywrt
+          cp -r ../lede/package/lean package/
+          sed -i 's/^src-git luci.*/src-git luci https:\/\/github.com\/coolsnowwolf\/luci/' feeds.conf.default
+          sed -i 's/^src-git packages.*/src-git packages https:\/\/github.com\/coolsnowwolf\/packages/' feeds.conf.default
+          ../../set_repo_hash.sh LeanLuci https://github.com/coolsnowwolf/luci.git
+          ../../set_repo_hash.sh LeanPackage https://github.com/coolsnowwolf/packages.git
+        
       - name: Add Packages to Lean
         run: |
           . add_packages_to_lean.sh
 
-      - name: Patches for Lean
+      - name: Install Openwrt Libs
         run: |
-          . lean_patches.sh
-
+          cd friendlywrt-rk3328
+          git clone https://github.com/openwrt/openwrt
+          rm -rf friendlywrt/package/libs
+          cp -r openwrt/package/libs friendlywrt/package/
+      
       - name: Change Log
         id: changelog
         run: |
-          ./changelog.sh
+          git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
+          ./changelog.sh FriendlyWRT
 
+      - name: Update Feeds
+        run: |
+          cd friendlywrt-rk3328/friendlywrt
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
+        
+      - name: Install Mods
+        run: |
+          cd friendlywrt-rk3328
+          sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%></td></tr>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+          sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+          sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
+        
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
         run: |
@@ -70,6 +92,16 @@ jobs:
           wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
           gunzip clash.gz
           chmod +x clash
+
+      - name: Install UPX
+        run: |
+          mkdir -p friendlywrt-rk3328/friendlywrt/staging_dir/host/bin/
+          ln -s /usr/bin/upx-ucl friendlywrt-rk3328/friendlywrt/staging_dir/host/bin/upx
+  
+      - name: Update Target.mk
+        run: |
+          cd friendlywrt-rk3328/friendlywrt/include
+          sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' target.mk
 
       - name: Build Config
         if: steps.changelog.outputs.changelog != ''

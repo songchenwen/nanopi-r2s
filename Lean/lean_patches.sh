@@ -1,6 +1,6 @@
 #!/bin/bash
 cd friendlywrt-rk3328/friendlywrt
-git apply ../../enable_autocore.diff
+git apply ../../Lean/enable_autocore.diff
 
 git diff -- package/lean/autocore/Makefile
 

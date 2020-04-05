@@ -1,9 +1,10 @@
 #!/bin/bash
-StatusFile=status.env
-NewStatusFile=newstatus.env
+VARIANTNAME=$1
+StatusFile=$VARIANTNAME/status.env
+NewStatusFile=$VARIANTNAME/newstatus.env
 URLFile=name_and_urls.env
-ChangeLogFile=CHANGELOG.md
-BuildTag="R2S-Lean-$(date +%Y-%m-%d)-$BuilderHash"
+ChangeLogFile=$VARIANTNAME/CHANGELOG.md
+BuildTag="$VARIANTNAME-$(date +%Y-%m-%d)-$BuilderHash"
 env | grep "Hash" > $NewStatusFile
 ChangeLog=""
 while read l; do
