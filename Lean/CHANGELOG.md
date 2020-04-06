@@ -1,3 +1,27 @@
+## Lean-2020-04-06-8b94319
+
+#### Builder [6ca7b53..8b94319](https://github.com/songchenwen/nanopi-r2s/compare/6ca7b53..8b94319)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8b94319](https://github.com/songchenwen/nanopi-r2s/commit/8b94319) | songchenwen | Fix File System Permissions |
+| [4261ef8](https://github.com/songchenwen/nanopi-r2s/commit/4261ef8) | 宋辰文 | Add luci-app-nfs |
+
+
+#### ScwPackage [3fa6c01..1583d32](https://github.com/songchenwen/openwrt-package/compare/3fa6c01..1583d32)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [950a544](https://github.com/songchenwen/openwrt-package/commit/950a544) | Lienol | passwall: optimize subscribe |
+| [5a47a8a](https://github.com/songchenwen/openwrt-package/commit/5a47a8a) | ShanStone | passwall: Fix blacklist by default proxy (#400) |
+
+
+
+
+--------------
+
 ## Lean-2020-04-06-6ca7b53
 
 #### Builder [70a1021..6ca7b53](https://github.com/songchenwen/nanopi-r2s/compare/70a1021..6ca7b53)
