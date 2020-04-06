@@ -1,3 +1,27 @@
+## Lean-2020-04-06-21b1d35
+
+#### Builder [8b94319..21b1d35](https://github.com/songchenwen/nanopi-r2s/compare/8b94319..21b1d35)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [21b1d35](https://github.com/songchenwen/nanopi-r2s/commit/21b1d35) | songchenwen | Clean Unused SRCs Before Building for Disk Space |
+
+
+#### Lean [5e9e8d8..7e22d61](https://github.com/coolsnowwolf/lede/compare/5e9e8d8..7e22d61)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7e22d613](https://github.com/coolsnowwolf/lede/commit/7e22d613) | lean | luci-app-music-remote-center: add zh-cn and fix path settings |
+| [7b250dee](https://github.com/coolsnowwolf/lede/commit/7b250dee) | lean | luci-app-music-remote-center: DAAP remote control music server for iOS/Android |
+| [7930a037](https://github.com/coolsnowwolf/lede/commit/7930a037) | Chuck |  default-settings: fix string replace (#4189) |
+
+
+
+
+--------------
+
 ## Lean-2020-04-06-8b94319
 
 #### Builder [6ca7b53..8b94319](https://github.com/songchenwen/nanopi-r2s/compare/6ca7b53..8b94319)
