@@ -22,3 +22,5 @@ mv ../../scripts/check_wan4.sh package/base-files/files/usr/bin && sed -i '/exit
 echo ""
 echo "package/base-files/files/etc/rc.local"
 cat package/base-files/files/etc/rc.local
+
+sed -i "s/65536/65535/" package/kernel/linux/files/sysctl-nf-conntrack.conf

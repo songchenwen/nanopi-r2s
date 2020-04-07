@@ -43,11 +43,11 @@ jobs:
       - name: Patch Kernel
         run: |
           . Lean/patch_kernel_5.4.sh
-
+  
       - name: Rebase on Lean
         run: |
           . Lean/rebase_on_lean.sh
-      
+
       - name: Add Packages to Lean
         run: |
           . add_packages_to_lean.sh
@@ -55,6 +55,12 @@ jobs:
       - name: Patches for Lean
         run: |
           . Lean/lean_patches.sh
+
+      - name: Install Openwrt octeontx patches
+        run: |
+          cd friendlywrt-rk3328
+          cp -r openwrt/target/linux/octeontx/patches-5.4 friendlywrt/target/linux/rockchip-rk3328/
+          ls friendlywrt/target/linux/rockchip-rk3328/patches-5.4
 
       - name: Change Log
         id: changelog
