@@ -1,3 +1,36 @@
+## Lean-2020-04-07-d5cb2cd
+
+#### Builder [67e97af..d5cb2cd](https://github.com/songchenwen/nanopi-r2s/compare/67e97af..d5cb2cd)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d5cb2cd](https://github.com/songchenwen/nanopi-r2s/commit/d5cb2cd) | songchenwen | Add Some Openwrt 5.4 Kernel Patches to Lean |
+| [f2031dc](https://github.com/songchenwen/nanopi-r2s/commit/f2031dc) | songchenwen | Pack Passwall |
+| [a3d3f53](https://github.com/songchenwen/nanopi-r2s/commit/a3d3f53) | songchenwen | Upstream Full Cone Nat Change |
+
+
+#### Lean [b622523..2a1f9e6](https://github.com/coolsnowwolf/lede/compare/b622523..2a1f9e6)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [2a1f9e6f](https://github.com/coolsnowwolf/lede/commit/2a1f9e6f) | lean | target: add luci-app-music-remote-center |
+
+
+#### ScwPackage [1583d32..35cc95f](https://github.com/songchenwen/openwrt-package/compare/1583d32..35cc95f)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [af5a68836](https://github.com/songchenwen/openwrt-package/commit/af5a68836) | xiaorouji | passwall: chinadns-ng use fair mode |
+| [f1352e26a](https://github.com/songchenwen/openwrt-package/commit/f1352e26a) | xiaorouji | chinadns-ng: bump 1.0-bate.22 |
+
+
+
+
+--------------
+
 ## Lean-2020-04-07-67e97af
 
 #### Builder [21b1d35..67e97af](https://github.com/songchenwen/nanopi-r2s/compare/21b1d35..67e97af)
