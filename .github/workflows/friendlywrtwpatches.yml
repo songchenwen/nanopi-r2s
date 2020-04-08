@@ -98,6 +98,10 @@ jobs:
           wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
           gunzip clash.gz
           chmod +x clash
+          cd ../..
+          mkdir -p etc/clash
+          cd etc/clash
+          wget -O Country.mmdb https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb
 
       - name: Install UPX
         run: |
