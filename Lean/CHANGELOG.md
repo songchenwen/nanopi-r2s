@@ -1,3 +1,20 @@
+## Lean-2020-04-08-d5cb2cd
+
+#### Lean [2a1f9e6..cef6bff](https://github.com/coolsnowwolf/lede/compare/2a1f9e6..cef6bff)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cef6bffa](https://github.com/coolsnowwolf/lede/commit/cef6bffa) | ricksuzade-maker | Bump wireguard to 1.0.20200401 (#4217) |
+| [a1b538a9](https://github.com/coolsnowwolf/lede/commit/a1b538a9) | lean | ipq40xx: switch to ath10k-ct |
+| [f095b225](https://github.com/coolsnowwolf/lede/commit/f095b225) | AmadeusGhost | bcm27xx: rpi4: enable wifi in first boot (#4220) |
+| [c3c418cd](https://github.com/coolsnowwolf/lede/commit/c3c418cd) | lean | luci-app-cifs-mount: add SMB/CIFS mount luci |
+
+
+
+
+--------------
+
 ## Lean-2020-04-07-d5cb2cd
 
 #### Builder [67e97af..d5cb2cd](https://github.com/songchenwen/nanopi-r2s/compare/67e97af..d5cb2cd)
