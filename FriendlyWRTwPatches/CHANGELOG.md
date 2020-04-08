@@ -1,3 +1,37 @@
+## FriendlyWRTwPatches-2020-04-08-433ce5a
+
+#### Builder [d5cb2cd..433ce5a](https://github.com/songchenwen/nanopi-r2s/compare/d5cb2cd..433ce5a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [433ce5a](https://github.com/songchenwen/nanopi-r2s/commit/433ce5a) | songchenwen | Add Clash Country.mmdb to Image |
+| [f770492](https://github.com/songchenwen/nanopi-r2s/commit/f770492) | songchenwen | Add LOL |
+
+
+#### Lean [cef6bff..dc875de](https://github.com/coolsnowwolf/lede/compare/cef6bff..dc875de)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [dc875de0](https://github.com/coolsnowwolf/lede/commit/dc875de0) | AmadeusGhost | kernel: netdev: add missing config for mlx5 driver (#4228) |
+| [b6b408c8](https://github.com/coolsnowwolf/lede/commit/b6b408c8) | lean | Version bump to R20.4.8 |
+| [6d92b607](https://github.com/coolsnowwolf/lede/commit/6d92b607) | lean | luci-app-music-remote-center: add place holder |
+| [25b01424](https://github.com/coolsnowwolf/lede/commit/25b01424) | lean | workflows: add dependenc host build |
+
+
+#### ScwPackage [35cc95f..49d75c3](https://github.com/songchenwen/openwrt-package/compare/35cc95f..49d75c3)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [964834569](https://github.com/songchenwen/openwrt-package/commit/964834569) | ShanStone | Fix chinadns-ng when using default dns (#408) |
+
+
+
+
+--------------
+
 ## FriendlyWRTwPatches-2020-04-08-d5cb2cd
 
 #### Builder [f2031dc..d5cb2cd](https://github.com/songchenwen/nanopi-r2s/compare/f2031dc..d5cb2cd)
