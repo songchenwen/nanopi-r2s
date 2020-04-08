@@ -1,3 +1,36 @@
+## FriendlyWRT-2020-04-08-d5cb2cd
+
+#### Builder [f2031dc..d5cb2cd](https://github.com/songchenwen/nanopi-r2s/compare/f2031dc..d5cb2cd)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d5cb2cd](https://github.com/songchenwen/nanopi-r2s/commit/d5cb2cd) | songchenwen | Add Some Openwrt 5.4 Kernel Patches to Lean |
+
+
+#### Lean [2a1f9e6..cef6bff](https://github.com/coolsnowwolf/lede/compare/2a1f9e6..cef6bff)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cef6bffa](https://github.com/coolsnowwolf/lede/commit/cef6bffa) | ricksuzade-maker | Bump wireguard to 1.0.20200401 (#4217) |
+| [a1b538a9](https://github.com/coolsnowwolf/lede/commit/a1b538a9) | lean | ipq40xx: switch to ath10k-ct |
+| [f095b225](https://github.com/coolsnowwolf/lede/commit/f095b225) | AmadeusGhost | bcm27xx: rpi4: enable wifi in first boot (#4220) |
+| [c3c418cd](https://github.com/coolsnowwolf/lede/commit/c3c418cd) | lean | luci-app-cifs-mount: add SMB/CIFS mount luci |
+
+
+#### LeanPackage [a6f3a70..f35494f](https://github.com/coolsnowwolf/packages/compare/a6f3a70..f35494f)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f35494fd7](https://github.com/coolsnowwolf/packages/commit/f35494fd7) | lean | minidlna: delay boot |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-07-f2031dc
 
 #### Builder [67e97af..f2031dc](https://github.com/songchenwen/nanopi-r2s/compare/67e97af..f2031dc)
