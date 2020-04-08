@@ -1,0 +1,157 @@
+name: LOL
+
+on:
+  repository_dispatch:
+  push:
+    branches: 
+      - master
+    paths:
+      - '.github/workflows/lienol_on_lean.yml'
+      - '*.sh'
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.sec_token }}
+      sec_token: ${{ secrets.sec_token }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: master
+          fetch-depth: 0
+          token: ${{ env.sec_token }}
+
+      - name: Init Env
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          . init_env.sh
+      
+      - name: Repo Hash
+        run: |
+          ./set_repo_hash.sh Builder
+      
+      - name: Friendlywrt Source
+        run: |
+          . friendlywrt_source.sh
+      
+      - name: Patch Kernel
+        run: |
+          . Lean/patch_kernel_5.4.sh
+          sed -i -r 's/# (CONFIG_.*_ERRATUM_.*?) is.*/\1=y/g' kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
+
+      - name: Rebase on Lean
+        run: |
+          . LOL/rebase_on_lienol.sh
+
+      - name: Add Packages to Lean
+        run: |
+          sed -i 's/^src-git lienol.*//' friendlywrt-rk3328/friendlywrt/feeds.conf.default
+          . add_packages_to_lean.sh
+
+      - name: Patches for Lean
+        run: |
+          . Lean/lean_patches.sh
+          
+      - name: Install Openwrt octeontx patches
+        run: |
+          cd friendlywrt-rk3328
+          cp -r openwrt/target/linux/octeontx/patches-5.4 friendlywrt/target/linux/rockchip-rk3328/
+          ls friendlywrt/target/linux/rockchip-rk3328/patches-5.4
+
+      - name: Change Log
+        id: changelog
+        run: |
+          ./changelog.sh LOL
+
+      - name: Download Clash Binary
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          CLASH_VERSION=v0.19.0
+          mkdir -p friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
+          cd friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
+          wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
+          gunzip clash.gz
+          chmod +x clash
+
+      - name: Build Config
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          cd friendlywrt-rk3328
+          cat configs/config_rk3328 | grep "TARGET" > ../rk3328.config
+          cat ../minimal_config.seed >> ../rk3328.config
+          cat ../rk3328.config > configs/config_rk3328
+          cat configs/config_rk3328
+      
+      - name: Build Friendlywrt
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          cd friendlywrt-rk3328
+          sed -i 's/set -eu/set -u/' scripts/mk-friendlywrt.sh
+          ./build.sh nanopi_r2s.mk
+
+      # from https://github.com/fanck0605/nanopi_r2s/blob/lean/.github/workflows/main.yml#L87
+      - name: Fix FriendlyWrt rootfs owner and group
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          sudo df -lh
+          lodev=$(sudo losetup -f)
+          echo "found unused loop dev $lodev"
+          sudo losetup -o 100663296 $lodev friendlywrt-rk3328/out/*.img
+          sudo rm -rf /mnt/friendlywrt-tmp
+          sudo mkdir -p /mnt/friendlywrt-tmp
+          sudo mount $lodev /mnt/friendlywrt-tmp
+          sudo chown -R root:root /mnt/friendlywrt-tmp
+          sudo umount /mnt/friendlywrt-tmp
+          sudo losetup -d $lodev
+      
+      - name: Zip Files
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          gzip friendlywrt-rk3328/out/*.img
+
+      - name: Assemble Artifact
+        if: steps.changelog.outputs.changelog != ''
+        id: assemble_artifact
+        run: |
+          rm -rf ./artifact/
+          mkdir -p ./artifact/
+          cd friendlywrt-rk3328/friendlywrt;./scripts/diffconfig.sh > ../../artifact/config.seed;cd ../../
+          mv friendlywrt-rk3328/out/*img* ./artifact/
+          cp friendlywrt-rk3328/friendlywrt/.config ./artifact/full.config
+          cp friendlywrt-rk3328/friendlywrt/bin/packages/*/scw/luci-app-passwall*.ipk ./artifact/
+          zip -r artifact.zip -j artifact artifact/*
+          release_tag=${{ steps.changelog.outputs.buildtag }}
+          echo "##[set-output name=release_tag;]$release_tag"
+
+      - name: Create Release
+        if: steps.changelog.outputs.changelog != ''
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.assemble_artifact.outputs.release_tag }}
+          release_name: ${{ steps.assemble_artifact.outputs.release_tag }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        if: steps.changelog.outputs.changelog != ''
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
+          asset_path: ./artifact.zip
+          asset_name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM.zip
+          asset_content_type: application/zip
+    
+      - name: Push Change Log
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          git pull --rebase --autostash
+          git push
