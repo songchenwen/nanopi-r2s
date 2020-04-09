@@ -9,7 +9,7 @@ on:
       - '.github/workflows/lean.yml'
       - '*.sh'
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 1'
 
 jobs:
   build:

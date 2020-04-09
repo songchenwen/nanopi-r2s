@@ -2,6 +2,7 @@
 VARIANTNAME=$1
 StatusFile=$VARIANTNAME/status.env
 NewStatusFile=$VARIANTNAME/newstatus.env
+RepoUsedPathFile=$VARIANTNAME/repo_used_path.env
 URLFile=name_and_urls.env
 ChangeLogFile=$VARIANTNAME/CHANGELOG.md
 BuildTag="$VARIANTNAME-$(date +%Y-%m-%d)-$BuilderHash"
@@ -23,6 +24,12 @@ while read l; do
     if [ -f "$StatusFile" ]; then
         oldLine=$(grep $StatusFile -e ${name}Hash)
     fi
+
+    logPathLine=""
+    if [ -f "$RepoUsedPathFile" ]; then
+        logPathLine=$(grep $RepoUsedPathFile -e ${name})
+    fi
+
     title=""
     body=""
     if [ "$oldLine" == "" ]; then
@@ -32,6 +39,13 @@ while read l; do
         oldHash=${Parts[1]}
         oldHash=$(echo $oldHash | cut -c -7)
         if ! [ "$oldHash" == "$hash" ]; then
+            logPath=""
+            if ! [ "$logPathLine" == "" ]; then
+                read -ra Parts <<< "$logPathLine"
+                logPath=${Parts[1]}
+                echo "only log repo $name for $logPath"
+            fi
+
             title="${name} [${oldHash}..$hash]($url/compare/$oldHash..$hash)"
             branch=master
             if [ "$name" == "Argon" ]; then
@@ -51,9 +65,10 @@ while read l; do
 | :----- | :------| :--- |
 "
             echo "Generating Change Log for $name $branch ${oldHash}..${hash}"
-            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:"| [%h](${url}/commit/%h) | %an | %s |" ${oldHash}..${hash} ${name}/$branch)
+            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:"| [%h](${url}/commit/%h) | %an | %s |" ${oldHash}..${hash} ${name}/$branch -- $logPath)
             if [ "$table" == "" ]; then
                 body=""
+                title=""
             else
                 body="$body$table"
             fi

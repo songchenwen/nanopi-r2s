@@ -5,7 +5,7 @@ cd friendlywrt
 git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
 git remote add upstream https://github.com/Lienol/openwrt.git && git fetch upstream
 git checkout upstream/dev-lean-lede -b tmp
-../../set_repo_hash.sh Lean
+../../set_repo_hash.sh Lienol
 git mv README.md README && git commit -m 'undo rename readme for rebasing'
 git checkout origin/master-v19.07.1
 git rebase adc1a9a3676b8d7be1b48b5aed185a94d8e42728^ --onto tmp -X ours
