@@ -1,3 +1,18 @@
+## FriendlyWRT-2020-04-09-ef49a2a
+
+#### Builder [f2366d2..ef49a2a](https://github.com/songchenwen/nanopi-r2s/compare/f2366d2..ef49a2a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [ef49a2a](https://github.com/songchenwen/nanopi-r2s/commit/ef49a2a) | songchenwen | Add luci-app-wrtbwmon |
+| [3aea628](https://github.com/songchenwen/nanopi-r2s/commit/3aea628) | songchenwen | Fix Kernel Patch |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-09-f2366d2
 
 #### Builder [433ce5a..f2366d2](https://github.com/songchenwen/nanopi-r2s/compare/433ce5a..f2366d2)
