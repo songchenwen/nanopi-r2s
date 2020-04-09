@@ -1,3 +1,20 @@
+## FriendlyWRTwPatches-2020-04-09-433ce5a
+
+#### Lean [dc875de..ae7a5d7](https://github.com/coolsnowwolf/lede/compare/dc875de..ae7a5d7)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [ae7a5d70](https://github.com/coolsnowwolf/lede/commit/ae7a5d70) | dongjuanyong | luci-app-ssr-plus: OpenWrt SNAPSHOT compatibility (#4154) |
+| [df49785a](https://github.com/coolsnowwolf/lede/commit/df49785a) | lean | openwrt-ci.yml: update |
+| [12b558bb](https://github.com/coolsnowwolf/lede/commit/12b558bb) | lean | amule: dyn linked |
+| [7bf824b1](https://github.com/coolsnowwolf/lede/commit/7bf824b1) | lean | qBittorrent: bump to v4.2.3 |
+
+
+
+
+--------------
+
 ## FriendlyWRTwPatches-2020-04-08-433ce5a
 
 #### Builder [d5cb2cd..433ce5a](https://github.com/songchenwen/nanopi-r2s/compare/d5cb2cd..433ce5a)
