@@ -63,6 +63,12 @@ jobs:
           git clone https://github.com/openwrt/openwrt
           rm -rf friendlywrt/package/libs
           cp -r openwrt/package/libs friendlywrt/package/
+
+      - name: Install Openwrt octeontx patches
+        run: |
+          cd friendlywrt-rk3328
+          cp -r openwrt/target/linux/octeontx/patches-5.4 friendlywrt/target/linux/rockchip-rk3328/
+          ls friendlywrt/target/linux/rockchip-rk3328/patches-5.4
       
       - name: Change Log
         id: changelog
@@ -82,6 +88,7 @@ jobs:
           sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%></td></tr>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
+          echo "sed -i 's/https:/http:/' /etc/opkg/distfeeds.conf" >> friendlywrt/package/base-files/files/root/setup.sh
         
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
