@@ -84,16 +84,24 @@ jobs:
           ./scripts/feeds install -a
         
       - name: Install Mods
-        env:
-          build_tag: ${{ steps.changelog.outputs.buildtag }}
         run: |
           cd friendlywrt-rk3328
           sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%> ℃</td></tr>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
           echo "sed -i 's/https:/http:/' /etc/opkg/distfeeds.conf" >> friendlywrt/package/base-files/files/root/setup.sh
-          sed -i '/luciversion/a \/ $build_tag by <a href="https://songchenwen.com">scw</a>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-        
+          sed -i '/luciversion/a \/ ${{ steps.changelog.outputs.buildtag }} by <a href="https://songchenwen.com">scw</a>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+      
+      - name: Add Temperature to Netdata
+        run: |
+          cd friendlywrt-rk3328
+          mkdir -p friendlywrt/package/base-files/files/usr/lib/netdata/charts.d
+          cp ../scripts/temp.chart.sh friendlywrt/package/base-files/files/usr/lib/netdata/charts.d/
+          echo "sed -i 's/charts.d = no/charts.d = yes/' /etc/netdata/netdata.conf" >> friendlywrt/package/base-files/files/root/setup.sh
+          echo "cp /usr/lib/netdata/conf.d/charts.d.conf /etc/netdata/" >> friendlywrt/package/base-files/files/root/setup.sh
+          echo "echo 'temp=yes' >> /etc/netdata/charts.d.conf" >> friendlywrt/package/base-files/files/root/setup.sh
+          echo "/etc/init.d/netdata restart" >> friendlywrt/package/base-files/files/root/setup.sh
+          
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
         run: |
