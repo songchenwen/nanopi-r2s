@@ -1,3 +1,20 @@
+## Lean-2020-04-09-3aea628
+
+#### Builder [433ce5a..3aea628](https://github.com/songchenwen/nanopi-r2s/compare/433ce5a..3aea628)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [3aea628](https://github.com/songchenwen/nanopi-r2s/commit/3aea628) | songchenwen | Fix Kernel Patch |
+| [f2366d2](https://github.com/songchenwen/nanopi-r2s/commit/f2366d2) | songchenwen | Reduce Update Frequency |
+| [7a54708](https://github.com/songchenwen/nanopi-r2s/commit/7a54708) | songchenwen | Add Version Indicator to FriendlyWRT |
+| [8e6d371](https://github.com/songchenwen/nanopi-r2s/commit/8e6d371) | songchenwen | Update FriendlyWRT |
+
+
+
+
+--------------
+
 ## Lean-2020-04-09-433ce5a
 
 #### Builder [d5cb2cd..433ce5a](https://github.com/songchenwen/nanopi-r2s/compare/d5cb2cd..433ce5a)
