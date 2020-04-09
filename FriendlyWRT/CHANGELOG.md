@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-09-f2366d2
+
+#### Builder [433ce5a..f2366d2](https://github.com/songchenwen/nanopi-r2s/compare/433ce5a..f2366d2)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f2366d2](https://github.com/songchenwen/nanopi-r2s/commit/f2366d2) | songchenwen | Reduce Update Frequency |
+| [7a54708](https://github.com/songchenwen/nanopi-r2s/commit/7a54708) | songchenwen | Add Version Indicator to FriendlyWRT |
+| [8e6d371](https://github.com/songchenwen/nanopi-r2s/commit/8e6d371) | songchenwen | Update FriendlyWRT |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-08-433ce5a
 
 #### Builder [d5cb2cd..433ce5a](https://github.com/songchenwen/nanopi-r2s/compare/d5cb2cd..433ce5a)
