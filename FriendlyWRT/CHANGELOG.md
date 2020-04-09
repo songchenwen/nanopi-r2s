@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-09-f176cc1
+
+#### Builder [ef49a2a..f176cc1](https://github.com/songchenwen/nanopi-r2s/compare/ef49a2a..f176cc1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f176cc1](https://github.com/songchenwen/nanopi-r2s/commit/f176cc1) | songchenwen | Add CPU Temperature to NetData |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-09-ef49a2a
 
 #### Builder [f2366d2..ef49a2a](https://github.com/songchenwen/nanopi-r2s/compare/f2366d2..ef49a2a)
