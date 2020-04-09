@@ -1,3 +1,17 @@
+## LOL-2020-04-09-433ce5a
+
+#### Builder [f770492..433ce5a](https://github.com/songchenwen/nanopi-r2s/compare/f770492..433ce5a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [433ce5a](https://github.com/songchenwen/nanopi-r2s/commit/433ce5a) | songchenwen | Add Clash Country.mmdb to Image |
+
+
+
+
+--------------
+
 ## LOL-2020-04-08-f770492
 
 #### Builder [67e97af..f770492](https://github.com/songchenwen/nanopi-r2s/compare/67e97af..f770492)
@@ -29,5 +43,3 @@
 
 
 --------------
-
-
