@@ -17,7 +17,7 @@ Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffche
 
 启动后如果发现 Passwall 的百度和谷歌连接一直失败，但实际能访问的话，原因是固件内的 wget 版本过旧，可以 ssh 进去 `opkg update;opkg install wget` 解决。在`系统-软件包`里更新 wget 也行。
 
-推荐使用 FriendlyWRT,  ~~CPU 1.2GHz 时温度更低，~~ 稳定性更好，性能也够用。Update: 2020-04-10 及以后的版本 FriendlyWRT 已解锁 CPU 主频上限，还是免费的性能更香。
+推荐使用 FriendlyWRT, CPU 1.2GHz 时温度更低，稳定性更好，性能也够用。
 
 WAN 口 DHCP 时，NAT 性能和温度 ⬇️
 
