@@ -64,8 +64,8 @@ while read l; do
 | Commit | Author | Desc |
 | :----- | :------| :--- |
 "
-            echo "Generating Change Log for $name $branch ${oldHash}..${hash}"
-            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:"| [%h](${url}/commit/%h) | %an | %s |" ${oldHash}..${hash} ${name}/$branch -- $logPath)
+            echo "Generating Change Log for ${name}/${branch} ${oldHash}..${hash} -- ${logPath}"
+            table=$(git log --no-merges --invert-grep --author="action@github.com" --pretty=format:"| [%h](${url}/commit/%h) | %an | %s |" ${oldHash}..${hash} ${name}/${branch} -- ${logPath})
             if [ "$table" == "" ]; then
                 body=""
                 title=""

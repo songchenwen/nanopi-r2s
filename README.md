@@ -14,7 +14,7 @@ Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffche
 
 其中 [Passwall](https://github.com/songchenwen/openwrt-package) 是修改版本，支持 Clash。Passwall 比 OpenClash 的好处是，OpenClash 所有流量都需要经过 Clash 转发，有性能损耗。[Passwall](https://github.com/songchenwen/openwrt-package) 可以设置规则只转发部分流量。
 
-推荐使用 FriendlyWRT, CPU 1.2GHz 时温度更低，稳定性更好，性能也够用。
+推荐使用 FriendlyWRT,  ~~CPU 1.2GHz 时温度更低，~~ 稳定性更好，性能也够用。Update: 2020-04-10 及以后的版本 FriendlyWRT 已解锁 CPU 主频上限，还是免费的性能更香。
 
 WAN 口 DHCP 时，NAT 性能和温度 ⬇️
 

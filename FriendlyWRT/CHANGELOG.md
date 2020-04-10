@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-10-676db71
+
+#### Builder [f176cc1..676db71](https://github.com/songchenwen/nanopi-r2s/compare/f176cc1..676db71)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [676db71](https://github.com/songchenwen/nanopi-r2s/commit/676db71) | songchenwen | FriendlyWrt Unlock CPU 1.5Ghz |
+| [932d62a](https://github.com/songchenwen/nanopi-r2s/commit/932d62a) | songchenwen | Update README |
+| [78a07e4](https://github.com/songchenwen/nanopi-r2s/commit/78a07e4) | songchenwen | Add Some Performance Test |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-09-f176cc1
 
 #### Builder [ef49a2a..f176cc1](https://github.com/songchenwen/nanopi-r2s/compare/ef49a2a..f176cc1)
