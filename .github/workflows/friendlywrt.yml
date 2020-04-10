@@ -101,6 +101,12 @@ jobs:
           echo "cp /usr/lib/netdata/conf.d/charts.d.conf /etc/netdata/" >> friendlywrt/package/base-files/files/root/setup.sh
           echo "echo 'temp=yes' >> /etc/netdata/charts.d.conf" >> friendlywrt/package/base-files/files/root/setup.sh
           echo "/etc/init.d/netdata restart" >> friendlywrt/package/base-files/files/root/setup.sh
+
+      - name: Unlock CPU 1.5Ghz
+        run: |
+          cd friendlywrt-rk3328/kernel
+          wget https://github.com/armbian/build/raw/master/patch/kernel/rockchip64-dev/RK3328-enable-1512mhz-opp.patch
+          git apply RK3328-enable-1512mhz-opp.patch
           
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
