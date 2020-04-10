@@ -2,11 +2,11 @@
 
 编译了两种固件，分别是基于 Lean 的和基于官方固件的。
 
-| 推荐 | 固件名字 | 状态 | 改动记录 | 简介 |
+| 荐 | 固件名字 | 状态 | 改动记录 | 简介 |
 | :--- | :------ | :--- | :----- | :--- |
-| * | FriendlyWRT | [![friendlywrt](https://github.com/songchenwen/nanopi-r2s/workflows/friendlywrt/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Afriendlywrt) | [Change Log](FriendlyWRT/CHANGELOG.md) | 以 FriendlyWRT 为基础, 添加 Lean 的包 |
-|   | Lean | [![lean](https://github.com/songchenwen/nanopi-r2s/workflows/lean/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Alean) | [Change Log](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
-|   | LOL | [![LOL](https://github.com/songchenwen/nanopi-r2s/workflows/LOL/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3ALOL) | [Change Log](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
+| * | FriendlyWRT | [![friendlywrt](https://github.com/songchenwen/nanopi-r2s/workflows/friendlywrt/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Afriendlywrt) | [改动记录](FriendlyWRT/CHANGELOG.md) | 以 FriendlyWRT 为基础, 添加 Lean 的包 |
+|   | Lean | [![lean](https://github.com/songchenwen/nanopi-r2s/workflows/lean/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Alean) | [改动记录](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
+|   | LOL | [![LOL](https://github.com/songchenwen/nanopi-r2s/workflows/LOL/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3ALOL) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
 
 Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffchen](https://github.com/soffchen/NanoPi-R2S)
 
@@ -16,15 +16,19 @@ Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffche
 
 推荐使用 FriendlyWRT, CPU 1.2GHz 时温度更低，稳定性更好，性能也够用。
 
-WAN 口 DHCP 时，NAT 性能和温度
+WAN 口 DHCP 时，NAT 性能和温度 ⬇️
 
 ![DHCP NAT](images/r2s_dhcp_nat.png)
 
-WAN 口 PPPOE 时，NAT 性能和温度
+WAN 口 PPPOE 时，NAT 性能和温度 ⬇️
 
 ![PPPOE NAT](images/r2s_pppoe_nat.png)
 
-Fast.com 测速
+Fast.com 测速 ⬇️
 
 ![fast.com](images/r2s_fastcom.png)
+
+Fast.com 测速 WAN 口 DHCP 时 CPU 占用和温度 （ WAN 口 PPPOE 的话，CPU 占用增加 20% 左右 ） ⬇️
+
+![fast.com](images/r2s_fastcom_nat.png)
 
