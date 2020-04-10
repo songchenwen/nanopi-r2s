@@ -1,3 +1,17 @@
+## FwF-2020-04-10-7a72ee2
+
+#### Builder [709f14c..7a72ee2](https://github.com/songchenwen/nanopi-r2s/compare/709f14c..7a72ee2)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7a72ee2](https://github.com/songchenwen/nanopi-r2s/commit/7a72ee2) | songchenwen | Remove Docker from FwF |
+
+
+
+
+--------------
+
 ## FwF-2020-04-10-709f14c
 
 #### Builder [676db71..709f14c](https://github.com/songchenwen/nanopi-r2s/compare/676db71..709f14c)
@@ -21,5 +35,3 @@
 
 
 --------------
-
-
