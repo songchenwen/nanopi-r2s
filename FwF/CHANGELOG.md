@@ -1,3 +1,25 @@
+## FwF-2020-04-11-cf7d037
+
+#### Builder [bf4fc77..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/bf4fc77..cf7d037)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cf7d037](https://github.com/songchenwen/nanopi-r2s/commit/cf7d037) | songchenwen | Add fw_update Script |
+
+
+#### Lean [ce326f0..a10390c](https://github.com/coolsnowwolf/lede/compare/ce326f0..a10390c)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a10390cc](https://github.com/coolsnowwolf/lede/commit/a10390cc) | Mattraks | luci-app-ssr-plus:Code optimization and Fix Bug (#4253) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-11-bf4fc77
 
 #### Builder [986d717..bf4fc77](https://github.com/songchenwen/nanopi-r2s/compare/986d717..bf4fc77)
