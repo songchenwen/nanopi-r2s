@@ -64,6 +64,11 @@ jobs:
           cp -r openwrt/target/linux/octeontx/patches-5.4 friendlywrt/target/linux/rockchip-rk3328/
           ls friendlywrt/target/linux/rockchip-rk3328/patches-5.4
 
+      - name: Install Mods
+        run: |
+          cd friendlywrt-rk3328
+          cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
+
       - name: Change Log
         id: changelog
         run: |

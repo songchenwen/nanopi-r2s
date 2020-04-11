@@ -91,7 +91,8 @@ jobs:
           sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
           sed -i '/luciversion/a \/ ${{ steps.changelog.outputs.buildtag }} by <a href="https://songchenwen.com">scw</a>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-      
+          cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
+
       - name: Add Temperature to Netdata
         run: |
           cd friendlywrt-rk3328

@@ -11,6 +11,8 @@
 
 默认 LAN 口 IP `192.168.2.1` 默认密码 `password`
 
+无需拔 SD 卡的升级方法, 4月11日以后的固件，ssh 进路由器, 并执行 `fw_update` 后面跟上新 ROM 的 zip 文件下载 URL, 比如 `fw_update "https://github.com/songchenwen/nanopi-r2s/releases/download/FriendlyWRT-2020-04-11-bf4fc77/FriendlyWRT-2020-04-11-bf4fc77-ROM.zip"`。这种刷机方式会保留配置文件, 如果新旧 ROM 的配置文件不兼容会引发各种问题，请自行判断配置文件的兼容性。
+
 Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffchen](https://github.com/soffchen/NanoPi-R2S)
 
 主要整合了 [Passwall](https://github.com/songchenwen/openwrt-package) 和 AdguardHome
