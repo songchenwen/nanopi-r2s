@@ -1,3 +1,29 @@
+## LOL-2020-04-11-cf7d037
+
+#### Builder [986d717..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/986d717..cf7d037)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cf7d037](https://github.com/songchenwen/nanopi-r2s/commit/cf7d037) | songchenwen | Add fw_update Script |
+| [bf4fc77](https://github.com/songchenwen/nanopi-r2s/commit/bf4fc77) | songchenwen | Fix distfeeds |
+| [8dbef0a](https://github.com/songchenwen/nanopi-r2s/commit/8dbef0a) | songchenwen | Delete Some VPN apps from FwF |
+| [e8fef50](https://github.com/songchenwen/nanopi-r2s/commit/e8fef50) | songchenwen | Not Recommend FwF |
+
+
+#### FriendlyWRT [337ed97..c2699cd](https://github.com/friendlyarm/friendlywrt/compare/337ed97..c2699cd)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [c2699cd44b](https://github.com/friendlyarm/friendlywrt/commit/c2699cd44b) | Lawrence-Tang | Re-enable ipv6 |
+| [f2c4d64a95](https://github.com/friendlyarm/friendlywrt/commit/f2c4d64a95) | Lawrence-Tang | Revert "set default theme to argon" |
+
+
+
+
+--------------
+
 ## LOL-2020-04-11-986d717
 
 #### Builder [3aea628..986d717](https://github.com/songchenwen/nanopi-r2s/compare/3aea628..986d717)
