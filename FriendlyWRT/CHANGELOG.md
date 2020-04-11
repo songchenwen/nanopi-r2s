@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-11-986d717
+
+#### Builder [709f14c..986d717](https://github.com/songchenwen/nanopi-r2s/compare/709f14c..986d717)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [986d717](https://github.com/songchenwen/nanopi-r2s/commit/986d717) | songchenwen | Add luci-app-serverchan |
+| [db6fb00](https://github.com/songchenwen/nanopi-r2s/commit/db6fb00) | songchenwen | Default Configs in Read Me |
+| [7a72ee2](https://github.com/songchenwen/nanopi-r2s/commit/7a72ee2) | songchenwen | Remove Docker from FwF |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-10-709f14c
 
 #### Builder [676db71..709f14c](https://github.com/songchenwen/nanopi-r2s/compare/676db71..709f14c)
