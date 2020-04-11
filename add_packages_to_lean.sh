@@ -12,8 +12,14 @@ pwd
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 cd luci-app-adguardhome
 ../../../../set_repo_hash.sh AdguardHome
-cd ../..
+cd ..
 
+pwd
+git clone https://github.com/tty228/luci-app-serverchan.git
+../../../set_repo_hash.sh ServerChan
+cd ..
+
+pwd
 echo "src-git scw https://github.com/songchenwen/openwrt-package" >> feeds.conf.default
 ../../set_repo_hash.sh ScwPackage https://github.com/songchenwen/openwrt-package.git
 

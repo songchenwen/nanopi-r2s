@@ -8,6 +8,7 @@ on:
       - master
     paths:
       - '.github/workflows/friendlywrt.yml'
+      - 'minimal_config.seed'
       - '*.sh'
   schedule:
     - cron: '0 0 * * *'
