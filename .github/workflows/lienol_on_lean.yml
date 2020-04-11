@@ -9,7 +9,7 @@ on:
       - '.github/workflows/lienol_on_lean.yml'
       - '*.sh'
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '0 4 * * 1'
 
 jobs:
   build:
