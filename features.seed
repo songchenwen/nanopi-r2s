@@ -141,11 +141,6 @@ CONFIG_PACKAGE_luci-app-aria2=y
 CONFIG_PACKAGE_ddns-scripts_aliyun=y
 CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4=y
 CONFIG_PACKAGE_luci-app-frpc=y
-CONFIG_PACKAGE_luci-app-openvpn-server=y
-CONFIG_PACKAGE_luci-app-ipsec-vpnd=y
-CONFIG_PACKAGE_iptables-mod-ipsec=y
-CONFIG_PACKAGE_kmod-ipt-ipsec=y
-CONFIG_PACKAGE_kmod-ipsec=y
 CONFIG_PACKAGE_luci-app-samba=y
 CONFIG_PACKAGE_autosamba=y
 CONFIG_PACKAGE_wsdd2=y
@@ -168,3 +163,25 @@ CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=y
 CONFIG_PACKAGE_luci-app-vssr_INCLUDE_V2ray=y
 CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_PACKAGE_luci-app-wireguard=y
+# CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
+# CONFIG_PACKAGE_iptables-mod-ipsec is not set
+# CONFIG_PACKAGE_kmod-ipt-ipsec is not set
+# CONFIG_PACKAGE_kmod-ipsec is not set
+# CONFIG_PACKAGE_strongswan is not set
+# CONFIG_PACKAGE_strongswan-charon is not set
+# CONFIG_PACKAGE_strongswan-ipsec is not set
+# CONFIG_PACKAGE_strongswan-minimal is not set
+# CONFIG_PACKAGE_strongswan-mod-aes is not set
+# CONFIG_PACKAGE_strongswan-mod-gmp is not set
+# CONFIG_PACKAGE_strongswan-mod-hmac is not set
+# CONFIG_PACKAGE_strongswan-mod-kernel-netlink is not set
+# CONFIG_PACKAGE_strongswan-mod-nonce is not set
+# CONFIG_PACKAGE_strongswan-mod-pubkey is not set
+# CONFIG_PACKAGE_strongswan-mod-random is not set
+# CONFIG_PACKAGE_strongswan-mod-sha1 is not set
+# CONFIG_PACKAGE_strongswan-mod-socket-default is not set
+# CONFIG_PACKAGE_strongswan-mod-stroke is not set
+# CONFIG_PACKAGE_strongswan-mod-updown is not set
+# CONFIG_PACKAGE_strongswan-mod-x509 is not set
+# CONFIG_PACKAGE_strongswan-mod-xauth-generic is not set
+# CONFIG_PACKAGE_strongswan-mod-xcbc is not 
