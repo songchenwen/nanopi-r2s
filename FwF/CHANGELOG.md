@@ -1,3 +1,18 @@
+## FwF-2020-04-11-986d717
+
+#### Builder [7a72ee2..986d717](https://github.com/songchenwen/nanopi-r2s/compare/7a72ee2..986d717)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [986d717](https://github.com/songchenwen/nanopi-r2s/commit/986d717) | songchenwen | Add luci-app-serverchan |
+| [db6fb00](https://github.com/songchenwen/nanopi-r2s/commit/db6fb00) | songchenwen | Default Configs in Read Me |
+
+
+
+
+--------------
+
 ## FwF-2020-04-10-7a72ee2
 
 #### Builder [709f14c..7a72ee2](https://github.com/songchenwen/nanopi-r2s/compare/709f14c..7a72ee2)
