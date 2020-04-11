@@ -1,3 +1,35 @@
+## LOL-2020-04-11-986d717
+
+#### Builder [3aea628..986d717](https://github.com/songchenwen/nanopi-r2s/compare/3aea628..986d717)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [986d717](https://github.com/songchenwen/nanopi-r2s/commit/986d717) | songchenwen | Add luci-app-serverchan |
+| [db6fb00](https://github.com/songchenwen/nanopi-r2s/commit/db6fb00) | songchenwen | Default Configs in Read Me |
+| [7a72ee2](https://github.com/songchenwen/nanopi-r2s/commit/7a72ee2) | songchenwen | Remove Docker from FwF |
+| [709f14c](https://github.com/songchenwen/nanopi-r2s/commit/709f14c) | songchenwen | Revert "FriendlyWrt Unlock CPU 1.5Ghz" |
+| [6765452](https://github.com/songchenwen/nanopi-r2s/commit/6765452) | songchenwen | Add FriendlyWRT with Features |
+| [676db71](https://github.com/songchenwen/nanopi-r2s/commit/676db71) | songchenwen | FriendlyWrt Unlock CPU 1.5Ghz |
+| [932d62a](https://github.com/songchenwen/nanopi-r2s/commit/932d62a) | songchenwen | Update README |
+| [78a07e4](https://github.com/songchenwen/nanopi-r2s/commit/78a07e4) | songchenwen | Add Some Performance Test |
+| [f176cc1](https://github.com/songchenwen/nanopi-r2s/commit/f176cc1) | songchenwen | Add CPU Temperature to NetData |
+| [ef49a2a](https://github.com/songchenwen/nanopi-r2s/commit/ef49a2a) | songchenwen | Add luci-app-wrtbwmon |
+
+
+#### FriendlyWRT [1bedd70..337ed97](https://github.com/friendlyarm/friendlywrt/compare/1bedd70..337ed97)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [337ed979d3](https://github.com/friendlyarm/friendlywrt/commit/337ed979d3) | Lawrence-Tang | set default theme to argon |
+| [a51380eaea](https://github.com/friendlyarm/friendlywrt/commit/a51380eaea) | Lawrence-Tang | update luci |
+
+
+
+
+--------------
+
 ## LOL-2020-04-09-3aea628
 
 #### Builder [433ce5a..3aea628](https://github.com/songchenwen/nanopi-r2s/compare/433ce5a..3aea628)
