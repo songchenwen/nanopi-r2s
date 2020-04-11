@@ -9,6 +9,8 @@
 |   | Lean | [![lean](https://github.com/songchenwen/nanopi-r2s/workflows/lean/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Alean) | [改动记录](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
 |   | LOL | [![LOL](https://github.com/songchenwen/nanopi-r2s/workflows/LOL/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3ALOL) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
 
+默认 LAN 口 IP `192.168.2.1` 默认密码 `password`
+
 Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffchen](https://github.com/soffchen/NanoPi-R2S)
 
 主要整合了 [Passwall](https://github.com/songchenwen/openwrt-package) 和 AdguardHome
