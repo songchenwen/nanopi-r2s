@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-11-cf7d037
+
+#### Builder [bf4fc77..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/bf4fc77..cf7d037)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cf7d037](https://github.com/songchenwen/nanopi-r2s/commit/cf7d037) | songchenwen | Add fw_update Script |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-11-bf4fc77
 
 #### Builder [986d717..bf4fc77](https://github.com/songchenwen/nanopi-r2s/compare/986d717..bf4fc77)
