@@ -1,3 +1,25 @@
+## FwF-2020-04-12-d04ccd6
+
+#### Builder [cf7d037..d04ccd6](https://github.com/songchenwen/nanopi-r2s/compare/cf7d037..d04ccd6)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d04ccd6](https://github.com/songchenwen/nanopi-r2s/commit/d04ccd6) | songchenwen | Remove nfs add v2ray and wget |
+
+
+#### Lean [a10390c..66e6e85](https://github.com/coolsnowwolf/lede/compare/a10390c..66e6e85)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [66e6e853](https://github.com/coolsnowwolf/lede/commit/66e6e853) | Mattraks | luci-app-ssr-plus:revert subscribe.lua (#4282) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-11-cf7d037
 
 #### Builder [bf4fc77..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/bf4fc77..cf7d037)
