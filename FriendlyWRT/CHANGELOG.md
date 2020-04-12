@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-12-d04ccd6
+
+#### Builder [cf7d037..d04ccd6](https://github.com/songchenwen/nanopi-r2s/compare/cf7d037..d04ccd6)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d04ccd6](https://github.com/songchenwen/nanopi-r2s/commit/d04ccd6) | songchenwen | Remove nfs add v2ray and wget |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-11-cf7d037
 
 #### Builder [bf4fc77..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/bf4fc77..cf7d037)
