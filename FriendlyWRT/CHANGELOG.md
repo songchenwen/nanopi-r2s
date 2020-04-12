@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-12-f8b0fae
+
+#### Builder [d04ccd6..f8b0fae](https://github.com/songchenwen/nanopi-r2s/compare/d04ccd6..f8b0fae)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f8b0fae](https://github.com/songchenwen/nanopi-r2s/commit/f8b0fae) | songchenwen | add luci-app-filebrowser |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-12-d04ccd6
 
 #### Builder [cf7d037..d04ccd6](https://github.com/songchenwen/nanopi-r2s/compare/cf7d037..d04ccd6)
