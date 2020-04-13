@@ -1,3 +1,18 @@
+## LOL-2020-04-13-f8b0fae
+
+#### Builder [cf7d037..f8b0fae](https://github.com/songchenwen/nanopi-r2s/compare/cf7d037..f8b0fae)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f8b0fae](https://github.com/songchenwen/nanopi-r2s/commit/f8b0fae) | songchenwen | add luci-app-filebrowser |
+| [d04ccd6](https://github.com/songchenwen/nanopi-r2s/commit/d04ccd6) | songchenwen | Remove nfs add v2ray and wget |
+
+
+
+
+--------------
+
 ## LOL-2020-04-11-cf7d037
 
 #### Builder [986d717..cf7d037](https://github.com/songchenwen/nanopi-r2s/compare/986d717..cf7d037)
