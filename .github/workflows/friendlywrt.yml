@@ -89,6 +89,7 @@ jobs:
           cd friendlywrt-rk3328
           sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%> ℃</td></tr>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i 's/pcdata(boardinfo.system or "?")/"ARMv8"/' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+          sed -i 's/<%=luci.sys.exec("cat \/etc\/bench.log") or " "%>//' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
           sed -i '/luciversion/a \/ ${{ steps.changelog.outputs.buildtag }} by <a href="https://songchenwen.com">scw</a>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
