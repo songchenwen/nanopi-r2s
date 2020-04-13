@@ -1,3 +1,17 @@
+## FwF-2020-04-13-f8b0fae
+
+#### Lean [66e6e85..b97c4e8](https://github.com/coolsnowwolf/lede/compare/66e6e85..b97c4e8)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b97c4e8b](https://github.com/coolsnowwolf/lede/commit/b97c4e8b) | Mattraks | luci-app-ssr-plus:Fix SS running status (#4289) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-12-f8b0fae
 
 #### Builder [d04ccd6..f8b0fae](https://github.com/songchenwen/nanopi-r2s/compare/d04ccd6..f8b0fae)
