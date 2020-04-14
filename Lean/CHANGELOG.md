@@ -1,3 +1,27 @@
+## Lean-2020-04-14-b7c1390
+
+#### Builder [f8b0fae..b7c1390](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..b7c1390)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b7c1390](https://github.com/songchenwen/nanopi-r2s/commit/b7c1390) | songchenwen | Remove Gzip Dependency of r2s flasher |
+| [7ab12ae](https://github.com/songchenwen/nanopi-r2s/commit/7ab12ae) | songchenwen | add luci-app-r2sflasher |
+| [9b5cf06](https://github.com/songchenwen/nanopi-r2s/commit/9b5cf06) | songchenwen | No Bench Mark for FriendlyWRT |
+
+
+#### FriendlyWRT [c2699cd..5ebce56](https://github.com/friendlyarm/friendlywrt/compare/c2699cd..5ebce56)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [5ebce5620b](https://github.com/friendlyarm/friendlywrt/commit/5ebce5620b) | Lawrence-Tang | add p7zip |
+
+
+
+
+--------------
+
 ## Lean-2020-04-13-f8b0fae
 
 #### Builder [cf7d037..f8b0fae](https://github.com/songchenwen/nanopi-r2s/compare/cf7d037..f8b0fae)
