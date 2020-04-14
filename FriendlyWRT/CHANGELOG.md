@@ -1,3 +1,32 @@
+## FriendlyWRT-2020-04-14-929220a
+
+#### Builder [f8b0fae..929220a](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..929220a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [929220a](https://github.com/songchenwen/nanopi-r2s/commit/929220a) | songchenwen | fix elfutils |
+| [c5c7214](https://github.com/songchenwen/nanopi-r2s/commit/c5c7214) | songchenwen | Try another way to fix elfutils |
+| [3a014f1](https://github.com/songchenwen/nanopi-r2s/commit/3a014f1) | songchenwen | Try to fix elfutils |
+| [b7c1390](https://github.com/songchenwen/nanopi-r2s/commit/b7c1390) | songchenwen | Remove Gzip Dependency of r2s flasher |
+| [7ab12ae](https://github.com/songchenwen/nanopi-r2s/commit/7ab12ae) | songchenwen | add luci-app-r2sflasher |
+| [9b5cf06](https://github.com/songchenwen/nanopi-r2s/commit/9b5cf06) | songchenwen | No Bench Mark for FriendlyWRT |
+
+
+#### FriendlyWRT [c2699cd..6025df0](https://github.com/friendlyarm/friendlywrt/compare/c2699cd..6025df0)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6025df0352](https://github.com/friendlyarm/friendlywrt/commit/6025df0352) | Lawrence-Tang | initial settings for ttyd, samba, watchcat |
+| [6ba702543b](https://github.com/friendlyarm/friendlywrt/commit/6ba702543b) | Lawrence-Tang | rk3328: add support for rtl8822bu |
+| [5ebce5620b](https://github.com/friendlyarm/friendlywrt/commit/5ebce5620b) | Lawrence-Tang | add p7zip |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-12-f8b0fae
 
 #### Builder [d04ccd6..f8b0fae](https://github.com/songchenwen/nanopi-r2s/compare/d04ccd6..f8b0fae)
