@@ -69,8 +69,6 @@ jobs:
           cd ..
           rm -rf friendlywrt/package/libs
           cp -r openwrt/package/libs friendlywrt/package/
-          # rm -rf friendlywrt/package/libs/elfutils
-          # cp -r lede/package/libs/elfutils friendlywrt/package/libs/
 
       - name: Install Openwrt octeontx patches
         run: |

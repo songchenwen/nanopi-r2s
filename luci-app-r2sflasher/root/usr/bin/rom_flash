@@ -31,7 +31,6 @@ cd $workingdir
 
 inputfile=$1
 nobackup=$2
-imgfile=rom.img
 lomntpoint=/mnt/img
 backupfile=/tmp/backup.tar.gz
 
@@ -59,18 +58,28 @@ fi
 
 if [ "$inputfileext" == "zip" ]; then
     gzfile=$(unzip -Z -1 "$inputfile" | grep "sd.img.gz$")
+    imgfile=$(unzip -Z -1 "$inputfile" | grep ".img$")
 
-    if [ "$gzfile" == "" ]; then
+    if [ "$gzfile" == "" ] && [ "$imgfile" == "" ]; then
         echo "没发现 sd.img.gz 结尾的固件包"
         cd /root
         rm -rf $workingdir
         exit 1
     fi
-    unzip "$inputfile" "$gzfile"
+    
+    if ! [ "$gzfile" == "" ]; then
+        unzip "$inputfile" "$gzfile"
+        imgfile=""
+    else
+        if ! [ "$imgfile" == "" ]; then
+            unzip "$inputfile" "$imgfile"
+        fi 
+    fi
+    
     rm $inputfile
 
-    if [ -f "$gzfile" ]; then
-        echo "zip 固件已解压至 $gzfile"
+    if [ -f "$gzfile" ] || [ -f "$imgfile" ]; then
+        echo "zip 固件已解压至 ${gzfile}${imgfile}"
     else
         echo "zip 固件解压失败"
         cd /root
@@ -79,7 +88,7 @@ if [ "$inputfileext" == "zip" ]; then
     fi
 fi
 
-if [ "$gzfile" == "" ]; then
+if [ "$gzfile" == "" ] && [ "$imgfile" == "" ]; then
     echo "不是有效的 ROM 文件"
     cd /root
     rm $inputfile
@@ -87,17 +96,20 @@ if [ "$gzfile" == "" ]; then
     exit 1
 fi
 
-echo "开始解压 gz 文件......"
-pv "$gzfile" | gunzip -dc > "$imgfile"
-if [ -f "$imgfile" ]; then
-    echo "gz 固件已解压至 $imgfile"
-    rm $gzfile
-else
-    echo "gz 固件解压失败"
-    rm $gzfile
-    cd /root
-    rm -rf $workingdir
-    exit 1
+if ! [ "$gzfile" == "" ]; then
+    echo "开始解压 gz 文件......"
+    imgfile="rom.img"
+    pv "$gzfile" | gunzip -dc > "$imgfile"
+    if [ -f "$imgfile" ]; then
+        echo "gz 固件已解压至 $imgfile"
+        rm $gzfile
+    else
+        echo "gz 固件解压失败"
+        rm $gzfile
+        cd /root
+        rm -rf $workingdir
+        exit 1
+    fi
 fi
 
 lodev=$(losetup -f)

@@ -2,6 +2,10 @@
 
 编译了两种固件，分别是基于 Lean 的和基于官方固件的。
 
+点击[这里](https://github.com/songchenwen/nanopi-r2s/releases)下载固件，推荐下载 FriendlyWRT 开头的版本。
+
+NanoPi R2S 图形化刷机工具 luci-app-r2sflasher 的 ipk 安装包，也可以从[这里](https://github.com/songchenwen/nanopi-r2s/releases)下载到，选择4月14日及之后的版本把 zip 包解压之后即可得到 ipk。
+
 | 荐 | 固件名字 | 状态 | 改动记录 | 简介 |
 | :--- | :------ | :--- | :----- | :--- |
 | * | FriendlyWRT | [![friendlywrt](https://github.com/songchenwen/nanopi-r2s/workflows/friendlywrt/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Afriendlywrt) | [改动记录](FriendlyWRT/CHANGELOG.md) | 以 FriendlyWRT 为基础, 添加 Lean 的包 |

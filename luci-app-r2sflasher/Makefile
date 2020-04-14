@@ -12,7 +12,7 @@ define Package/$(PKG_NAME)
   SUBMENU:=3. Applications
   TITLE:=LuCI Application to Flash NanoPi R2S ROM
   PKGARCH:=all
-  DEPENDS:=+bash +unzip +pv +losetup +zstd
+  DEPENDS:=+bash +gzip +tar +unzip +pv +losetup +zstd
 endef
 
 define Build/Prepare
