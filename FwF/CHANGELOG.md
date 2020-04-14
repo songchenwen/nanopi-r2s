@@ -1,3 +1,41 @@
+## FwF-2020-04-14-c5c7214
+
+#### Builder [f8b0fae..c5c7214](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..c5c7214)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [c5c7214](https://github.com/songchenwen/nanopi-r2s/commit/c5c7214) | songchenwen | Try another way to fix elfutils |
+| [3a014f1](https://github.com/songchenwen/nanopi-r2s/commit/3a014f1) | songchenwen | Try to fix elfutils |
+| [b7c1390](https://github.com/songchenwen/nanopi-r2s/commit/b7c1390) | songchenwen | Remove Gzip Dependency of r2s flasher |
+| [7ab12ae](https://github.com/songchenwen/nanopi-r2s/commit/7ab12ae) | songchenwen | add luci-app-r2sflasher |
+| [9b5cf06](https://github.com/songchenwen/nanopi-r2s/commit/9b5cf06) | songchenwen | No Bench Mark for FriendlyWRT |
+
+
+#### FriendlyWRT [c2699cd..6025df0](https://github.com/friendlyarm/friendlywrt/compare/c2699cd..6025df0)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6025df0352](https://github.com/friendlyarm/friendlywrt/commit/6025df0352) | Lawrence-Tang | initial settings for ttyd, samba, watchcat |
+| [6ba702543b](https://github.com/friendlyarm/friendlywrt/commit/6ba702543b) | Lawrence-Tang | rk3328: add support for rtl8822bu |
+| [5ebce5620b](https://github.com/friendlyarm/friendlywrt/commit/5ebce5620b) | Lawrence-Tang | add p7zip |
+
+
+#### Lean [b97c4e8..3ad7a35](https://github.com/coolsnowwolf/lede/compare/b97c4e8..3ad7a35)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [3ad7a35c91](https://github.com/coolsnowwolf/lede/commit/3ad7a35c91) | CN_SZTL | luci-app-ssr-plus: use "&" to instead of "-d" (daemon mode) (#4307) |
+| [9cf7ebae5f](https://github.com/coolsnowwolf/lede/commit/9cf7ebae5f) | Mattraks | luci-app-ssr-plus:Fix kcptun startup errors (#4303) |
+| [f4a9966616](https://github.com/coolsnowwolf/lede/commit/f4a9966616) | hyird | luci-app-unblockmusic: add flac switch for nodejs (#4302) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-13-f8b0fae
 
 #### Lean [66e6e85..b97c4e8](https://github.com/coolsnowwolf/lede/compare/66e6e85..b97c4e8)
