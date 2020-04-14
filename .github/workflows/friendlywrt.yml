@@ -61,12 +61,14 @@ jobs:
 
       - name: Install Openwrt Libs
         run: |
+          git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
           cd friendlywrt-rk3328
           git clone https://github.com/openwrt/openwrt
+          cd openwrt
+          git revert --no-edit d27623b542548b765ddd46b046169006a3b5f66f
+          cd ..
           rm -rf friendlywrt/package/libs
           cp -r openwrt/package/libs friendlywrt/package/
-          rm -rf friendlywrt/package/libs/elfutils
-          cp -r lede/package/libs/elfutils friendlywrt/package/libs/
 
       - name: Install Openwrt octeontx patches
         run: |
