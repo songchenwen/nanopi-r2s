@@ -1,0 +1,26 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "R2S Flasher"
+msgstr "R2S 刷机"
+
+msgid "Flash ROM"
+msgstr "刷写 ROM"
+
+msgid "Choose Your NanoPi R2S ROM zip File to Flash"
+msgstr "选择 NanoPi R2S ROM zip 压缩文件"
+
+msgid "No Specify ROM File."
+msgstr "找不到 ROM 文件"
+
+msgid "Keep Configs"
+msgstr "保留设置"
+
+msgid "compatibility needs to be checked"
+msgstr "需自行确认配置文件兼容性"
+
+msgid "Choose File"
+msgstr "选择 ROM 文件"
+
+msgid "Flash"
+msgstr "刷写"

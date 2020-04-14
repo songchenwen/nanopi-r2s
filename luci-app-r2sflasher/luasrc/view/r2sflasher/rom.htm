@@ -1,0 +1,15 @@
+<%+cbi/valueheader%>
+	<label class="cbi-value" style="display:inline-block; width: 130px" for="keep_config"><%:Keep Configs%></label>
+	<input class="cbi-input-file" style="width: 40px" type="checkbox" id="keep_config" name="keep_config" checked />
+	<div class="cbi-value-description"><span class="cbi-value-helpicon"><img src="/luci-static/resources/cbi/help.gif"/></span> <%:compatibility needs to be checked%></div>
+<%+cbi/valuefooter%>
+
+<%+cbi/valueheader%>
+	<label class="cbi-value" style="display:inline-block; width: 130px" for="romfile"><%:Choose File%></label>
+	<input class="cbi-input-file" style="width: 400px" type="file" id="romfile" name="romfile" />
+	<input type="submit" class="cbi-button cbi-input-apply" name="flash" value="<%:Flash%>" />
+<%+cbi/valuefooter%>
+
+<%+cbi/valueheader%>
+	<div class="cbi-value-description"  style="margin-left:20px"><span class="cbi-value-helpicon"><img src="/luci-static/resources/cbi/help.gif"/></span> by <a href="https://songchenwen.com" target="_blank">scw</a> <a href="https://songchenwen.com/nanopi-r2s-roms-redir" target="_blank">roms</a></div>
+<%+cbi/valuefooter%>

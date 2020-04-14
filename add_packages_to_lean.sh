@@ -26,3 +26,5 @@ echo "src-git scw https://github.com/songchenwen/openwrt-package" >> feeds.conf.
 echo ""
 echo "feeds.conf.default"
 cat feeds.conf.default
+
+cp -r ../../luci-app-r2sflasher package/
