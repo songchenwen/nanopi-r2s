@@ -16,7 +16,7 @@ FriendlyWRT 和 FwF 是基于官方固件的版本，主要求稳，没有解锁
 | * | [FriendlyWRT](https://github.com/songchenwen/nanopi-r2s/releases/tag/FriendlyWRT-2020-04-15-f666d0b) | [改动记录](FriendlyWRT/CHANGELOG.md) | 以官方固件为基础, 添加 Lean 的包 |
 | * | [FwF](https://github.com/songchenwen/nanopi-r2s/releases/tag/FwF-2020-04-14-c5c7214) | [改动记录](FwF/CHANGELOG.md) | FriendlyWRT with Features, 比上面的固件含有更多功能 |
 |   | [Lean](https://github.com/songchenwen/nanopi-r2s/releases/tag/Lean-2020-04-14-b7c1390) | [改动记录](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
-|   | [LOL](https://github.com/songchenwen/nanopi-r2s/releases/tag/LOL-2020-04-14-b7c1390) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
+|   | [LOL](https://github.com/songchenwen/nanopi-r2s/releases/tag/LOL-2020-04-15-06ca030) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
 
 默认 LAN 口 IP `192.168.2.1` 默认密码 `password`
 

@@ -1,3 +1,33 @@
+## LOL-2020-04-15-06ca030
+
+#### Builder [b7c1390..06ca030](https://github.com/songchenwen/nanopi-r2s/compare/b7c1390..06ca030)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [06ca030](https://github.com/songchenwen/nanopi-r2s/commit/06ca030) | songchenwen | Update README |
+| [73d70f6](https://github.com/songchenwen/nanopi-r2s/commit/73d70f6) | songchenwen | README about friendlywrt |
+| [f666d0b](https://github.com/songchenwen/nanopi-r2s/commit/f666d0b) | songchenwen | Add ETH Tool and Cloudflare DDNS |
+| [6921e05](https://github.com/songchenwen/nanopi-r2s/commit/6921e05) | songchenwen | Edit R2S Flasher ROM Page |
+| [c4df26f](https://github.com/songchenwen/nanopi-r2s/commit/c4df26f) | songchenwen | luci-app-r2sflasher support img.zip file |
+| [929220a](https://github.com/songchenwen/nanopi-r2s/commit/929220a) | songchenwen | fix elfutils |
+| [c5c7214](https://github.com/songchenwen/nanopi-r2s/commit/c5c7214) | songchenwen | Try another way to fix elfutils |
+| [3a014f1](https://github.com/songchenwen/nanopi-r2s/commit/3a014f1) | songchenwen | Try to fix elfutils |
+
+
+#### FriendlyWRT [5ebce56..6025df0](https://github.com/friendlyarm/friendlywrt/compare/5ebce56..6025df0)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6025df0352](https://github.com/friendlyarm/friendlywrt/commit/6025df0352) | Lawrence-Tang | initial settings for ttyd, samba, watchcat |
+| [6ba702543b](https://github.com/friendlyarm/friendlywrt/commit/6ba702543b) | Lawrence-Tang | rk3328: add support for rtl8822bu |
+
+
+
+
+--------------
+
 ## LOL-2020-04-14-b7c1390
 
 #### Builder [f8b0fae..b7c1390](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..b7c1390)
