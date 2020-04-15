@@ -1,23 +1,26 @@
 # Nanopi R2S 固件自动编译
 
+[![friendlywrt](https://github.com/songchenwen/nanopi-r2s/workflows/friendlywrt/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Afriendlywrt) 
+[![FwF](https://github.com/songchenwen/nanopi-r2s/workflows/FwF/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3AFwF) 
+[![lean](https://github.com/songchenwen/nanopi-r2s/workflows/lean/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Alean) 
+[![LOL](https://github.com/songchenwen/nanopi-r2s/workflows/LOL/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3ALOL) 
+
 编译了两种固件，分别是基于 Lean 的和基于官方固件的。
-
-点击[这里](https://github.com/songchenwen/nanopi-r2s/releases)下载固件，推荐下载 FriendlyWRT 开头的版本。
-
-NanoPi R2S 图形化刷机工具 luci-app-r2sflasher 的 ipk 安装包，也可以从[这里](https://github.com/songchenwen/nanopi-r2s/releases)下载到，选择4月14日及之后的版本把 zip 包解压之后即可得到 ipk。
 
 FriendlyWRT 和 FwF 是基于官方固件的版本，主要求稳，没有解锁 CPU 主频，也没添加 Flow Offload，实测性能够用，温度还低，推荐作为家庭主路由拿来长期使用。
 
-| 荐 | 固件名字 | 状态 | 改动记录 | 简介 |
-| :--- | :------ | :--- | :----- | :--- |
-| * | FriendlyWRT | [![friendlywrt](https://github.com/songchenwen/nanopi-r2s/workflows/friendlywrt/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Afriendlywrt) | [改动记录](FriendlyWRT/CHANGELOG.md) | 以官方固件为基础, 添加 Lean 的包 |
-| * | FwF | [![FwF](https://github.com/songchenwen/nanopi-r2s/workflows/FwF/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3AFwF) | [改动记录](FwF/CHANGELOG.md) | FriendlyWRT with Features, 比上面的固件含有更多包 |
-|   | Lean | [![lean](https://github.com/songchenwen/nanopi-r2s/workflows/lean/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3Alean) | [改动记录](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
-|   | LOL | [![LOL](https://github.com/songchenwen/nanopi-r2s/workflows/LOL/badge.svg)](https://github.com/songchenwen/nanopi-r2s/actions?query=workflow%3ALOL) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
+点击下方固件名字，可找到对应版本固件的最新下载链接。图形化刷机工具 [luci-app-r2sflasher](luci-app-r2sflasher) 的 ipk 安装包也在下载到的 zip 里。推荐下载 FriendlyWRT 的版本。
+
+| 推荐 | 固件名字 | 改动记录 | 简介 |
+| :--- | :------ | :----- | :--- |
+| * | [FriendlyWRT](https://github.com/songchenwen/nanopi-r2s/releases/tag/FriendlyWRT-2020-04-15-f666d0b) | [改动记录](FriendlyWRT/CHANGELOG.md) | 以官方固件为基础, 添加 Lean 的包 |
+| * | [FwF](https://github.com/songchenwen/nanopi-r2s/releases/tag/FwF-2020-04-14-c5c7214) | [改动记录](FwF/CHANGELOG.md) | FriendlyWRT with Features, 比上面的固件含有更多功能 |
+|   | [Lean](https://github.com/songchenwen/nanopi-r2s/releases/tag/Lean-2020-04-14-b7c1390) | [改动记录](Lean/CHANGELOG.md) | 以 Lean 为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 | 
+|   | [LOL](https://github.com/songchenwen/nanopi-r2s/releases/tag/LOL-2020-04-14-b7c1390) | [改动记录](LOL/CHANGELOG.md) | 以[Lienol on Lean](https://github.com/Lienol/openwrt/tree/dev-lean-lede)为基础, 增加 FriendlyWRT 对 OpenWRT 的改动 |
 
 默认 LAN 口 IP `192.168.2.1` 默认密码 `password`
 
-4月14日之后的版本加入了 luci-app-r2sflasher, 可以图形化刷机了。
+4月14日之后的版本加入了 [luci-app-r2sflasher](luci-app-r2sflasher), 可以图形化刷机了。
 
 Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffchen](https://github.com/soffchen/NanoPi-R2S)
 

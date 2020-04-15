@@ -107,7 +107,11 @@ touch $ChangeLogFile
 printf '%s\n%s\n' "$ChangeLogFull" "$(cat $ChangeLogFile)" >$ChangeLogFile
 rm $StatusFile
 mv $NewStatusFile $StatusFile
+
+sed -i -E "s/(releases\/tag\/)${VARIANTNAME}-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9a-f]+/\1${BuildTag}/" README.md
+
 git add $StatusFile
 git add $ChangeLogFile
+git add README.md
 git commit -m "ChangeLog for $BuildTag"
 # git push
