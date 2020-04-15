@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-15-06ca030
+
+#### Builder [6921e05..06ca030](https://github.com/songchenwen/nanopi-r2s/compare/6921e05..06ca030)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [06ca030](https://github.com/songchenwen/nanopi-r2s/commit/06ca030) | songchenwen | Update README |
+| [73d70f6](https://github.com/songchenwen/nanopi-r2s/commit/73d70f6) | songchenwen | README about friendlywrt |
+| [f666d0b](https://github.com/songchenwen/nanopi-r2s/commit/f666d0b) | songchenwen | Add ETH Tool and Cloudflare DDNS |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-15-6921e05
 
 #### Builder [929220a..6921e05](https://github.com/songchenwen/nanopi-r2s/compare/929220a..6921e05)
