@@ -1,3 +1,18 @@
+## FriendlyWRT-2020-04-15-6921e05
+
+#### Builder [929220a..6921e05](https://github.com/songchenwen/nanopi-r2s/compare/929220a..6921e05)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6921e05](https://github.com/songchenwen/nanopi-r2s/commit/6921e05) | songchenwen | Edit R2S Flasher ROM Page |
+| [c4df26f](https://github.com/songchenwen/nanopi-r2s/commit/c4df26f) | songchenwen | luci-app-r2sflasher support img.zip file |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-14-929220a
 
 #### Builder [f8b0fae..929220a](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..929220a)
