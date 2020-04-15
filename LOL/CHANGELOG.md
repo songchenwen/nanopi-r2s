@@ -1,3 +1,17 @@
+## LOL-2020-04-15-2e348ea
+
+#### Builder [06ca030..2e348ea](https://github.com/songchenwen/nanopi-r2s/compare/06ca030..2e348ea)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [2e348ea](https://github.com/songchenwen/nanopi-r2s/commit/2e348ea) | songchenwen | Add Separated Read Me File to Avoid Merge Conflict |
+
+
+
+
+--------------
+
 ## LOL-2020-04-15-06ca030
 
 #### Builder [b7c1390..06ca030](https://github.com/songchenwen/nanopi-r2s/compare/b7c1390..06ca030)
