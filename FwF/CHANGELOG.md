@@ -1,3 +1,31 @@
+## FwF-2020-04-15-2e348ea
+
+#### Builder [c5c7214..2e348ea](https://github.com/songchenwen/nanopi-r2s/compare/c5c7214..2e348ea)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [2e348ea](https://github.com/songchenwen/nanopi-r2s/commit/2e348ea) | songchenwen | Add Separated Read Me File to Avoid Merge Conflict |
+| [06ca030](https://github.com/songchenwen/nanopi-r2s/commit/06ca030) | songchenwen | Update README |
+| [73d70f6](https://github.com/songchenwen/nanopi-r2s/commit/73d70f6) | songchenwen | README about friendlywrt |
+| [f666d0b](https://github.com/songchenwen/nanopi-r2s/commit/f666d0b) | songchenwen | Add ETH Tool and Cloudflare DDNS |
+| [6921e05](https://github.com/songchenwen/nanopi-r2s/commit/6921e05) | songchenwen | Edit R2S Flasher ROM Page |
+| [c4df26f](https://github.com/songchenwen/nanopi-r2s/commit/c4df26f) | songchenwen | luci-app-r2sflasher support img.zip file |
+| [929220a](https://github.com/songchenwen/nanopi-r2s/commit/929220a) | songchenwen | fix elfutils |
+
+
+#### Lean [3ad7a35..8a02b49](https://github.com/coolsnowwolf/lede/compare/3ad7a35..8a02b49)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8a02b490](https://github.com/coolsnowwolf/lede/commit/8a02b490) | Mattraks | luci-app-ssr-plus:Fix Socks5 startup errors (#4310) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-14-c5c7214
 
 #### Builder [f8b0fae..c5c7214](https://github.com/songchenwen/nanopi-r2s/compare/f8b0fae..c5c7214)
