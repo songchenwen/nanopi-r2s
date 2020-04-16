@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-16-9f73416
+
+#### Builder [94a2747..9f73416](https://github.com/songchenwen/nanopi-r2s/compare/94a2747..9f73416)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [9f73416](https://github.com/songchenwen/nanopi-r2s/commit/9f73416) | songchenwen | Update R2S Flasher |
+| [2ff8b7e](https://github.com/songchenwen/nanopi-r2s/commit/2ff8b7e) | songchenwen | Add Download URL to luci-app-r2sflasher |
+| [d7e657a](https://github.com/songchenwen/nanopi-r2s/commit/d7e657a) | songchenwen | Fix SSRP |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-16-94a2747
 
 #### Builder [2e348ea..94a2747](https://github.com/songchenwen/nanopi-r2s/compare/2e348ea..94a2747)
