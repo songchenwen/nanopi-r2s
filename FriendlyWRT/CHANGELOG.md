@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-16-94a2747
+
+#### Builder [2e348ea..94a2747](https://github.com/songchenwen/nanopi-r2s/compare/2e348ea..94a2747)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [94a2747](https://github.com/songchenwen/nanopi-r2s/commit/94a2747) | songchenwen | Update r2sflasher Dependency |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-15-2e348ea
 
 #### Builder [06ca030..2e348ea](https://github.com/songchenwen/nanopi-r2s/compare/06ca030..2e348ea)
