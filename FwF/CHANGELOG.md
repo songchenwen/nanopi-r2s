@@ -1,3 +1,27 @@
+## FwF-2020-04-16-94a2747
+
+#### Builder [2e348ea..94a2747](https://github.com/songchenwen/nanopi-r2s/compare/2e348ea..94a2747)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [94a2747](https://github.com/songchenwen/nanopi-r2s/commit/94a2747) | songchenwen | Update r2sflasher Dependency |
+
+
+#### Lean [8a02b49..6c8c96c](https://github.com/coolsnowwolf/lede/compare/8a02b49..6c8c96c)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7262d950](https://github.com/coolsnowwolf/lede/commit/7262d950) | lean | luci-app-ssr-plus:hide ssr server option when shadowsocks-libev-ss-server is not installed |
+| [2284f0da](https://github.com/coolsnowwolf/lede/commit/2284f0da) | HQ Ong | Add ACL rule to compatible with trunk Luci requirement (#4323) |
+| [2125e805](https://github.com/coolsnowwolf/lede/commit/2125e805) | lean | luci-app-ssr-plus: revert lock feature |
+
+
+
+
+--------------
+
 ## FwF-2020-04-15-2e348ea
 
 #### Builder [c5c7214..2e348ea](https://github.com/songchenwen/nanopi-r2s/compare/c5c7214..2e348ea)
