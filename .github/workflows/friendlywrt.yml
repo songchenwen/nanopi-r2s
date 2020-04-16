@@ -186,6 +186,7 @@ jobs:
           cp friendlywrt-rk3328/friendlywrt/.config ./artifact/full.config
           cp friendlywrt-rk3328/friendlywrt/bin/packages/*/scw/luci-app-passwall*.ipk ./artifact/
           cp friendlywrt-rk3328/friendlywrt/bin/packages/*/*/luci-app-r2sflasher*.ipk ./artifact/
+          cp friendlywrt-rk3328/friendlywrt/bin/packages/*/*/luci-app-filetransfer*.ipk ./artifact/
           zip -r artifact.zip -j artifact artifact/*
           release_tag=${{ steps.changelog.outputs.buildtag }}
           echo "##[set-output name=release_tag;]$release_tag"

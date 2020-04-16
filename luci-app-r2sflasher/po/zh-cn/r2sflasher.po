@@ -16,8 +16,8 @@ msgstr "找不到 ROM 文件"
 msgid "Keep Configs"
 msgstr "保留设置"
 
-msgid "compatibility needs to be checked"
-msgstr "需自行确认配置文件兼容性"
+msgid "compatibility unchecked"
+msgstr "需自行确认设置兼容性"
 
 msgid "Choose File"
 msgstr "选择 ROM 文件"

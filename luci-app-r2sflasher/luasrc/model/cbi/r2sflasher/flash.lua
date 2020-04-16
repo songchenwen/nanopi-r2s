@@ -1,4 +1,3 @@
-local fs = require "luci.fs"
 local http = luci.http
 local dsp = require 'luci.dispatcher'
 

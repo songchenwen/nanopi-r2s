@@ -2,8 +2,8 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-r2sflasher
 PKG_VERSION:=1.0
-PKG_RELEASE:=2
-PKG_DATE:=20200415
+PKG_RELEASE:=3
+PKG_DATE:=20200416
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -12,7 +12,7 @@ define Package/$(PKG_NAME)
   SUBMENU:=3. Applications
   TITLE:=LuCI Application to Flash NanoPi R2S ROM
   PKGARCH:=all
-  DEPENDS:=+bash +gzip +tar +unzip +pv +losetup +zstd
+  DEPENDS:=+bash +gzip +tar +unzip +pv +losetup +zstd +luci-base +luci-lib-nixio
 endef
 
 define Build/Prepare
