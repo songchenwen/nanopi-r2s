@@ -16,8 +16,9 @@ cd ..
 
 pwd
 git clone https://github.com/tty228/luci-app-serverchan.git
-../../../set_repo_hash.sh ServerChan
-cd ..
+cd luci-app-serverchan
+../../../../set_repo_hash.sh ServerChan
+cd ../..
 
 pwd
 echo "src-git scw https://github.com/songchenwen/openwrt-package" >> feeds.conf.default

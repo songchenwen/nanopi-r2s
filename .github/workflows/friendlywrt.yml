@@ -83,12 +83,14 @@ jobs:
           ./changelog.sh FriendlyWRT
 
       - name: Update Feeds
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328/friendlywrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
         
       - name: Install Mods
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328
           sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%> ℃</td></tr>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
@@ -99,6 +101,7 @@ jobs:
           cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
 
       - name: Add Temperature to Netdata
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328
           mkdir -p friendlywrt/package/base-files/files/usr/lib/netdata/charts.d
@@ -123,11 +126,13 @@ jobs:
           wget -O Country.mmdb https://github.com/Dreamacro/maxmind-geoip/releases/latest/download/Country.mmdb
 
       - name: Install UPX
+        if: steps.changelog.outputs.changelog != ''
         run: |
           mkdir -p friendlywrt-rk3328/friendlywrt/staging_dir/host/bin/
           ln -s /usr/bin/upx-ucl friendlywrt-rk3328/friendlywrt/staging_dir/host/bin/upx
   
       - name: Update Target.mk
+        if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328/friendlywrt/include
           sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' target.mk
