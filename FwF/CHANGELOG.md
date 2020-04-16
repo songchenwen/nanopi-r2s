@@ -1,3 +1,33 @@
+## FwF-2020-04-16-9f73416
+
+#### Builder [94a2747..9f73416](https://github.com/songchenwen/nanopi-r2s/compare/94a2747..9f73416)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [9f73416](https://github.com/songchenwen/nanopi-r2s/commit/9f73416) | songchenwen | Update R2S Flasher |
+| [2ff8b7e](https://github.com/songchenwen/nanopi-r2s/commit/2ff8b7e) | songchenwen | Add Download URL to luci-app-r2sflasher |
+| [d7e657a](https://github.com/songchenwen/nanopi-r2s/commit/d7e657a) | songchenwen | Fix SSRP |
+
+
+#### Lean [6c8c96c..a557064](https://github.com/coolsnowwolf/lede/compare/6c8c96c..a557064)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a5570642](https://github.com/coolsnowwolf/lede/commit/a5570642) | Xiaok | frp: bump version to v0.32.1 and dos2unix for Makefile (#4338) |
+| [988acf9d](https://github.com/coolsnowwolf/lede/commit/988acf9d) | fw876@outlook.com | remove obsolete package |
+
+
+#### SSRP [8c7f623](/commit/8c7f623)
+
+
+
+
+
+
+--------------
+
 ## FwF-2020-04-16-94a2747
 
 #### Builder [2e348ea..94a2747](https://github.com/songchenwen/nanopi-r2s/compare/2e348ea..94a2747)
