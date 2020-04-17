@@ -4,6 +4,6 @@ FriendlyWRT with Features
 
 在[FriendlyWRT](../FriendlyWRT)的基础上，添加了更多功能。
 
-[下载地址](https://github.com/songchenwen/nanopi-r2s/releases/download/FwF-2020-04-16-9f73416/FwF-2020-04-16-9f73416-ROM.zip)
+[下载地址](https://github.com/songchenwen/nanopi-r2s/releases/download/FwF-2020-04-17-0e7ccd9/FwF-2020-04-17-0e7ccd9-ROM.zip)
 
 [改动记录](CHANGELOG.md)

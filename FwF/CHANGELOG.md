@@ -1,3 +1,36 @@
+## FwF-2020-04-17-0e7ccd9
+
+#### ServerChan [99c9023..d14067f](https://github.com/tty228/luci-app-serverchan/compare/99c9023..d14067f)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d14067f](https://github.com/tty228/luci-app-serverchan/commit/d14067f) | tty228 | 修复上线检测未正确使用变量 |
+| [5ae8cd2](https://github.com/tty228/luci-app-serverchan/commit/5ae8cd2) | tty228 | update |
+| [80e5936](https://github.com/tty228/luci-app-serverchan/commit/80e5936) | tty228 | Update README.md |
+| [908bbc7](https://github.com/tty228/luci-app-serverchan/commit/908bbc7) | tty228 | v1.72 |
+
+
+#### Builder [9f73416..0e7ccd9](https://github.com/songchenwen/nanopi-r2s/compare/9f73416..0e7ccd9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [0e7ccd9](https://github.com/songchenwen/nanopi-r2s/commit/0e7ccd9) | songchenwen | + FileAssistant -Watchcat |
+
+
+#### Lean [a557064..639f363](https://github.com/coolsnowwolf/lede/compare/a557064..639f363)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [639f3631](https://github.com/coolsnowwolf/lede/commit/639f3631) | Xiaok | n2n: update to v2.6.0-stable (#4349) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-16-9f73416
 
 #### Builder [94a2747..9f73416](https://github.com/songchenwen/nanopi-r2s/compare/94a2747..9f73416)
