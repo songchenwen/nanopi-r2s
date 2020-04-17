@@ -181,7 +181,7 @@ if [ -f "$zstfile" ]; then
     fi
 
     echo "开始刷机, 请不要断电或关机, 如果刷机失败请取出 SD 卡用电脑重新写入 ROM"
-    pv -f -F "刷机中请不要断电或关机 %e %p" -i 1 "$zstfile" | zstdcat | dd of=/dev/mmcblk0 conv=fsync
+    pv -f -F "刷机中, 请不要断电或关机 %e %p" -i 1 "$zstfile" | zstdcat | dd of=/dev/mmcblk0 conv=fsync
     echo "刷机完毕, 正在重启, 请稍候..."
     sleep 5
     echo o > /proc/sysrq-trigger

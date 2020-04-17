@@ -11,7 +11,7 @@ on:
       - 'minimal_config.seed'
       - '*.sh'
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 17 * * *'
 
 jobs:
   build:

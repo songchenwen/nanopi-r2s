@@ -11,7 +11,7 @@ on:
       - 'features.seed'
       - '*.sh'
   schedule:
-    - cron: '0 0 * * 1'
+    - cron: '50 19 * * 1'
 
 jobs:
   build:
