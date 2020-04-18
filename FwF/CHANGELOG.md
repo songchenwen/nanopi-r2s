@@ -1,3 +1,31 @@
+## FwF-2020-04-18-ec8a958
+
+#### ServerChan [d14067f..20d4f2e](https://github.com/tty228/luci-app-serverchan/compare/d14067f..20d4f2e)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [20d4f2e](https://github.com/tty228/luci-app-serverchan/commit/20d4f2e) | tty228 | Update README.md |
+| [79d20c9](https://github.com/tty228/luci-app-serverchan/commit/79d20c9) | tty228 | update |
+| [7c0b338](https://github.com/tty228/luci-app-serverchan/commit/7c0b338) | tty228 | 修复 lan 接口无线设备离线时接口识别错误的bug |
+| [715d7fb](https://github.com/tty228/luci-app-serverchan/commit/715d7fb) | tty228 | 更改几个可能引起问题的语法 |
+| [025d0f8](https://github.com/tty228/luci-app-serverchan/commit/025d0f8) | tty228 | v1.74 |
+| [915fa16](https://github.com/tty228/luci-app-serverchan/commit/915fa16) | tty228 | 修复 tg 定时推送乱码问题 |
+| [ce6c990](https://github.com/tty228/luci-app-serverchan/commit/ce6c990) | tty228 | v1.73 |
+
+
+#### Builder [0e7ccd9..ec8a958](https://github.com/songchenwen/nanopi-r2s/compare/0e7ccd9..ec8a958)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [ec8a958](https://github.com/songchenwen/nanopi-r2s/commit/ec8a958) | songchenwen | Fix Timezone |
+
+
+
+
+--------------
+
 ## FwF-2020-04-17-0e7ccd9
 
 #### ServerChan [99c9023..d14067f](https://github.com/tty228/luci-app-serverchan/compare/99c9023..d14067f)
