@@ -2,6 +2,6 @@
 
 以官方固件为基础, 添加 Lean 的包
 
-[下载地址](https://github.com/songchenwen/nanopi-r2s/releases/download/FriendlyWRT-2020-04-18-ec8a958/FriendlyWRT-2020-04-18-ec8a958-ROM.zip)
+[下载地址](https://github.com/songchenwen/nanopi-r2s/releases/download/FriendlyWRT-2020-04-19-9a6851a/FriendlyWRT-2020-04-19-9a6851a-ROM.zip)
 
 [改动记录](CHANGELOG.md)

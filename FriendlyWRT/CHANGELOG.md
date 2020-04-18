@@ -1,3 +1,33 @@
+## FriendlyWRT-2020-04-19-9a6851a
+
+#### ServerChan [20d4f2e..7d39adb](https://github.com/tty228/luci-app-serverchan/compare/20d4f2e..7d39adb)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7d39adb](https://github.com/tty228/luci-app-serverchan/commit/7d39adb) | tty228 | Update serverchan.lua |
+| [25c589e](https://github.com/tty228/luci-app-serverchan/commit/25c589e) | tty228 | v1.76 |
+| [c59007e](https://github.com/tty228/luci-app-serverchan/commit/c59007e) | tty228 | Update Makefile |
+| [59782cd](https://github.com/tty228/luci-app-serverchan/commit/59782cd) | tty228 | update |
+| [babaedf](https://github.com/tty228/luci-app-serverchan/commit/babaedf) | tty228 | update |
+| [a028deb](https://github.com/tty228/luci-app-serverchan/commit/a028deb) | tty228 | Update Makefile |
+| [d3d3b24](https://github.com/tty228/luci-app-serverchan/commit/d3d3b24) | tty228 | 换行有问题 |
+| [19e21e5](https://github.com/tty228/luci-app-serverchan/commit/19e21e5) | tty228 | update |
+| [833b3c7](https://github.com/tty228/luci-app-serverchan/commit/833b3c7) | tty228 | update |
+
+
+#### Builder [ec8a958..9a6851a](https://github.com/songchenwen/nanopi-r2s/compare/ec8a958..9a6851a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [9a6851a](https://github.com/songchenwen/nanopi-r2s/commit/9a6851a) | songchenwen | Delete Lean and LOL Version |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-18-ec8a958
 
 #### ServerChan [d14067f..20d4f2e](https://github.com/tty228/luci-app-serverchan/compare/d14067f..20d4f2e)
