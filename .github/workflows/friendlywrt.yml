@@ -19,8 +19,13 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.sec_token }}
       sec_token: ${{ secrets.sec_token }}
-
+    
     steps:
+      - name: Setup timezone
+        uses: zcong1993/setup-timezone@master
+        with:
+          timezone: Asia/Shanghai
+          
       - name: Checkout
         uses: actions/checkout@master
         with:

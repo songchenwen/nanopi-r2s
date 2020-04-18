@@ -21,6 +21,11 @@ jobs:
       sec_token: ${{ secrets.sec_token }}
 
     steps:
+      - name: Setup timezone
+        uses: zcong1993/setup-timezone@master
+        with:
+          timezone: Asia/Shanghai
+
       - name: Checkout
         uses: actions/checkout@master
         with:
