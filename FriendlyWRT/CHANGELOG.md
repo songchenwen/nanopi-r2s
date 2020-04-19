@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-04-20-9a6851a
+
+#### ServerChan [7d39adb..c15251d](https://github.com/tty228/luci-app-serverchan/compare/7d39adb..c15251d)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [c15251d](https://github.com/tty228/luci-app-serverchan/commit/c15251d) | tty228 | v1.77 |
+| [07d69bd](https://github.com/tty228/luci-app-serverchan/commit/07d69bd) | tty228 | Update serverchan |
+| [49863f2](https://github.com/tty228/luci-app-serverchan/commit/49863f2) | tty228 | 设备下线时不需要重置流量数据 |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-19-9a6851a
 
 #### ServerChan [20d4f2e..7d39adb](https://github.com/tty228/luci-app-serverchan/compare/20d4f2e..7d39adb)
