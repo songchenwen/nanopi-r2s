@@ -1,3 +1,47 @@
+## FwF-2020-04-21-a5f91ca
+
+#### ServerChan [20d4f2e..c15251d](https://github.com/tty228/luci-app-serverchan/compare/20d4f2e..c15251d)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [c15251d](https://github.com/tty228/luci-app-serverchan/commit/c15251d) | tty228 | v1.77 |
+| [07d69bd](https://github.com/tty228/luci-app-serverchan/commit/07d69bd) | tty228 | Update serverchan |
+| [49863f2](https://github.com/tty228/luci-app-serverchan/commit/49863f2) | tty228 | 设备下线时不需要重置流量数据 |
+| [7d39adb](https://github.com/tty228/luci-app-serverchan/commit/7d39adb) | tty228 | Update serverchan.lua |
+| [25c589e](https://github.com/tty228/luci-app-serverchan/commit/25c589e) | tty228 | v1.76 |
+| [c59007e](https://github.com/tty228/luci-app-serverchan/commit/c59007e) | tty228 | Update Makefile |
+| [59782cd](https://github.com/tty228/luci-app-serverchan/commit/59782cd) | tty228 | update |
+| [babaedf](https://github.com/tty228/luci-app-serverchan/commit/babaedf) | tty228 | update |
+| [a028deb](https://github.com/tty228/luci-app-serverchan/commit/a028deb) | tty228 | Update Makefile |
+| [d3d3b24](https://github.com/tty228/luci-app-serverchan/commit/d3d3b24) | tty228 | 换行有问题 |
+| [19e21e5](https://github.com/tty228/luci-app-serverchan/commit/19e21e5) | tty228 | update |
+| [833b3c7](https://github.com/tty228/luci-app-serverchan/commit/833b3c7) | tty228 | update |
+
+
+#### Builder [ec8a958..a5f91ca](https://github.com/songchenwen/nanopi-r2s/compare/ec8a958..a5f91ca)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a5f91ca](https://github.com/songchenwen/nanopi-r2s/commit/a5f91ca) | songchenwen | luci-app-flasher auto redirect when reversed proxied |
+| [9b56dcc](https://github.com/songchenwen/nanopi-r2s/commit/9b56dcc) | songchenwen | Add Test Build with FlowOffload |
+| [9a6851a](https://github.com/songchenwen/nanopi-r2s/commit/9a6851a) | songchenwen | Delete Lean and LOL Version |
+
+
+#### Lean [639f363..3bb1af3](https://github.com/coolsnowwolf/lede/compare/639f363..3bb1af3)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b20f9a70](https://github.com/coolsnowwolf/lede/commit/b20f9a70) | CN_SZTL | luci-app-unblockmusic: drop outdated server (#4386) |
+| [b7e9fc66](https://github.com/coolsnowwolf/lede/commit/b7e9fc66) | Kui Wu | luci-app-frpc: add proxy_protocol_version option for proxy config (#4370) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-18-ec8a958
 
 #### ServerChan [d14067f..20d4f2e](https://github.com/tty228/luci-app-serverchan/compare/d14067f..20d4f2e)
