@@ -1,0 +1,208 @@
+CONFIG_AUTOREMOVE=y
+CONFIG_BUILD_PATENTED=y
+CONFIG_BRCMFMAC_SDIO=y
+CONFIG_IMAGEOPT=y
+CONFIG_KERNEL_AIO=y
+CONFIG_JSON_ADD_IMAGE_INFO=y
+CONFIG_KERNEL_ARM_PMU=y
+CONFIG_KERNEL_BLK_CGROUP=y
+CONFIG_KERNEL_BLK_DEV_THROTTLING=y
+CONFIG_KERNEL_BTRFS_FS_POSIX_ACL=y
+CONFIG_KERNEL_KALLSYMS=y
+CONFIG_KERNEL_PERF_EVENTS=y
+CONFIG_KERNEL_CGROUPS=y
+CONFIG_KERNEL_CGROUP_CPUACCT=y
+CONFIG_KERNEL_CGROUP_DEVICE=y
+CONFIG_KERNEL_CGROUP_FREEZER=y
+CONFIG_KERNEL_CGROUP_PIDS=y
+CONFIG_KERNEL_CGROUP_SCHED=y
+CONFIG_KERNEL_MEMCG=y
+CONFIG_KERNEL_MEMCG_KMEM=y
+CONFIG_KERNEL_MM_OWNER=y
+CONFIG_KERNEL_NETPRIO_CGROUP=y
+CONFIG_KERNEL_NET_CLS_CGROUP=y
+CONFIG_KERNEL_CPUSETS=y
+CONFIG_KERNEL_FAIR_GROUP_SCHED=y
+CONFIG_KERNEL_FANOTIFY=y
+CONFIG_KERNEL_FHANDLE=y
+CONFIG_KERNEL_FREEZER=y
+CONFIG_KERNEL_RESOURCE_COUNTERS=y
+CONFIG_KERNEL_RT_GROUP_SCHED=y
+CONFIG_LUCI_LANG_en=y
+CONFIG_LUCI_LANG_zh-cn=y
+CONFIG_LUCI_LANG_zh-tw=y
+CONFIG_PACKAGE_libustream-openssl=y
+CONFIG_PACKAGE_ca-bundle=y
+CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_wget=y
+CONFIG_PACKAGE_triggerhappy=y
+CONFIG_PACKAGE_uboot-envtools=y
+CONFIG_PACKAGE_usb-modeswitch=y
+CONFIG_PACKAGE_kmod-mmc=y
+CONFIG_PACKAGE_kmod-ikconfig=y
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-usb-net=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
+CONFIG_PACKAGE_iw=y
+CONFIG_PACKAGE_iwinfo=y
+CONFIG_PACKAGE_hostapd=y
+CONFIG_PACKAGE_hostapd-basic=y
+CONFIG_PACKAGE_hostapd-utils=y
+CONFIG_PACKAGE_wpad=y
+CONFIG_PACKAGE_wpad-mini=y
+CONFIG_PACKAGE_wpa-supplicant=y
+CONFIG_DRIVER_11N_SUPPORT=y
+CONFIG_DRIVER_11AC_SUPPORT=y
+CONFIG_DRIVER_11W_SUPPORT=y
+CONFIG_PACKAGE_kmod-brcmfmac=y
+CONFIG_PACKAGE_kmod-cfg80211=y
+CONFIG_PACKAGE_ipv6helper=y
+CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+CONFIG_OPENSSL_ENGINE_BUILTIN=y
+CONFIG_OPENSSL_ENGINE_BUILTIN_AFALG=y
+CONFIG_OPENSSL_OPTIMIZE_SPEED=y
+CONFIG_OPENSSL_WITH_DTLS=y
+CONFIG_OPENSSL_WITH_EC2M=y
+CONFIG_OPENSSL_WITH_NPN=y
+# CONFIG_OPENSSL_ENGINE_BUILTIN_DEVCRYPTO is not set
+# CONFIG_PACKAGE_kmod-cryptodev is not set
+# CONFIG_PACKAGE_libopenssl-devcrypto is not set
+CONFIG_LIBSODIUM_MINIMAL=y
+CONFIG_PACKAGE_kmod-ipt-offload=y
+CONFIG_PACKAGE_kmod-nft-offload=y
+CONFIG_PACKAGE_collectd-mod-thermal=y
+CONFIG_PACKAGE_collectd-mod-uptime=y
+CONFIG_PACKAGE_collectd-mod-wireless=y
+CONFIG_PACKAGE_collectd=y
+CONFIG_PACKAGE_curl=y
+CONFIG_PACKAGE_lrzsz=y
+CONFIG_PACKAGE_nano=y
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_resolveip=y
+CONFIG_PACKAGE_sudo=y
+CONFIG_PACKAGE_tcping=y
+CONFIG_PACKAGE_autocore=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_diffutils=y
+CONFIG_PACKAGE_vim-fuller=y
+CONFIG_PACKAGE_pv=y
+CONFIG_PACKAGE_pigz=y
+CONFIG_PACKAGE_unzip=y
+CONFIG_PACKAGE_ethtool=y
+CONFIG_PACKAGE_coreutils-nohup=y
+CONFIG_PACKAGE_coreutils-timeout=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_iptables-mod-extra=y
+CONFIG_PACKAGE_kmod-ipt-extra=y
+CONFIG_PACKAGE_libltdl=y
+CONFIG_PACKAGE_losetup=y
+CONFIG_PACKAGE_zstd=y
+CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_zlib=y
+CONFIG_PACKAGE_chinadns-ng=y
+CONFIG_PACKAGE_haproxy=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-netdata=y
+CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-serverchan=y
+CONFIG_PACKAGE_luci-app-fileassistant=y
+CONFIG_PACKAGE_luci-app-r2sflasher=y
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_socks=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks_socks=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=y
+CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=y
+CONFIG_PACKAGE_v2ray-plugin=y
+CONFIG_PACKAGE_v2ray=y
+CONFIG_PACKAGE_luci-app-flowoffload=y
+# CONFIG_V2RAY_COMPRESS_GOPROXY is not set
+# CONFIG_V2RAY_JSON_V2CTL is not set
+CONFIG_V2RAY_JSON_INTERNAL=y
+# CONFIG_V2RAY_JSON_NONE is not set
+CONFIG_V2RAY_EXCLUDE_V2CTL=y
+CONFIG_V2RAY_EXCLUDE_ASSETS=y
+# CONFIG_V2RAY_COMPRESS_UPX is not set
+CONFIG_V2RAY_DISABLE_NONE=y
+# CONFIG_V2RAY_DISABLE_CUSTOM is not set
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-argon-dark-mod=y
+# CONFIG_PACKAGE_samba36-server is not set
+# CONFIG_PACKAGE_autosamba is not set
+# CONFIG_PACKAGE_luci-app-samba is not set
+# CONFIG_PACKAGE_wsdd2 is not set
+# CONFIG_PACKAGE_luci-app-adbyby-plus is not set
+# CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
+# CONFIG_PACKAGE_luci-app-wrtbwmon is not set
+# CONFIG_PACKAGE_luci-app-nlbwmon is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2 is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin is not set
+# CONFIG_PACKAGE_luci-app-unblockmusic is not set
+# CONFIG_PACKAGE_luci-app-vsftpd is not set
+# CONFIG_PACKAGE_luci-app-xlnetacc is not set
+# CONFIG_PACKAGE_luci-app-zerotier is not set
+# CONFIG_PACKAGE_iptables-mod-ipsec is not set
+# CONFIG_PACKAGE_kmod-ipt-ipsec is not set
+# CONFIG_PACKAGE_kmod-iptunnel6 is not set
+# CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+# CONFIG_PACKAGE_libcares is not set
+# CONFIG_PACKAGE_libevent2 is not set
+# CONFIG_PACKAGE_libgmp is not set
+# CONFIG_PACKAGE_libhttp-parser is not set
+# CONFIG_PACKAGE_libnatpmp is not set
+# CONFIG_PACKAGE_libnet-1.2.x is not set
+# CONFIG_PACKAGE_libnghttp2 is not set
+# CONFIG_PACKAGE_libpcap is not set
+# CONFIG_PACKAGE_libuv is not set
+# CONFIG_PACKAGE_kmod-ipsec is not set
+# CONFIG_PACKAGE_microsocks is not set
+# CONFIG_PACKAGE_nlbwmon is not set
+# CONFIG_PACKAGE_node is not set
+# CONFIG_PACKAGE_redsocks2 is not set
+# CONFIG_PACKAGE_shadowsocksr-libev-server is not set
+# CONFIG_PACKAGE_strongswan is not set
+# CONFIG_PACKAGE_strongswan-charon is not set
+# CONFIG_PACKAGE_strongswan-ipsec is not set
+# CONFIG_PACKAGE_strongswan-minimal is not set
+# CONFIG_PACKAGE_strongswan-mod-aes is not set
+# CONFIG_PACKAGE_strongswan-mod-gmp is not set
+# CONFIG_PACKAGE_strongswan-mod-hmac is not set
+# CONFIG_PACKAGE_strongswan-mod-kernel-netlink is not set
+# CONFIG_PACKAGE_strongswan-mod-nonce is not set
+# CONFIG_PACKAGE_strongswan-mod-pubkey is not set
+# CONFIG_PACKAGE_strongswan-mod-random is not set
+# CONFIG_PACKAGE_strongswan-mod-sha1 is not set
+# CONFIG_PACKAGE_strongswan-mod-socket-default is not set
+# CONFIG_PACKAGE_strongswan-mod-stroke is not set
+# CONFIG_PACKAGE_strongswan-mod-updown is not set
+# CONFIG_PACKAGE_strongswan-mod-x509 is not set
+# CONFIG_PACKAGE_strongswan-mod-xauth-generic is not set
+# CONFIG_PACKAGE_strongswan-mod-xcbc is not set
+# CONFIG_PACKAGE_tcpping is not set
+# CONFIG_PACKAGE_UnblockNeteaseMusic is not set
+# CONFIG_PACKAGE_UnblockNeteaseMusicGo is not set
+# CONFIG_PACKAGE_adbyby is not set
+# CONFIG_PACKAGE_vsftpd-alt is not set
+# CONFIG_PACKAGE_zerotier is not set
+# CONFIG_UnblockNeteaseMusic_Go is not set
+# CONFIG_UnblockNeteaseMusic_NodeJS is not set
