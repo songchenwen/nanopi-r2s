@@ -1,3 +1,18 @@
+## FriendlyWRT-2020-04-21-a5f91ca
+
+#### Builder [9a6851a..a5f91ca](https://github.com/songchenwen/nanopi-r2s/compare/9a6851a..a5f91ca)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a5f91ca](https://github.com/songchenwen/nanopi-r2s/commit/a5f91ca) | songchenwen | luci-app-flasher auto redirect when reversed proxied |
+| [9b56dcc](https://github.com/songchenwen/nanopi-r2s/commit/9b56dcc) | songchenwen | Add Test Build with FlowOffload |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-20-9a6851a
 
 #### ServerChan [7d39adb..c15251d](https://github.com/tty228/luci-app-serverchan/compare/7d39adb..c15251d)
