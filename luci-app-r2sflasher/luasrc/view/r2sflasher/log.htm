@@ -14,7 +14,7 @@ local dsp = require "luci.dispatcher"
 						log_textarea.innerHTML = x.responseText;
 						log_textarea.scrollTop = log_textarea.scrollHeight;
 					}
-					if (x.status == 0) {
+					if (x.status == 0 || x.status == 502 || x.status == 503 || x.status == 504) {
 						rebooting = true;
 					}
 				} else {
