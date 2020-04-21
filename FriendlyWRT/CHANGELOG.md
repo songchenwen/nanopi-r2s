@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-22-099d874
+
+#### Builder [a5f91ca..099d874](https://github.com/songchenwen/nanopi-r2s/compare/a5f91ca..099d874)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [099d874](https://github.com/songchenwen/nanopi-r2s/commit/099d874) | songchenwen | R2S Flasher Change Backup Dir |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-21-a5f91ca
 
 #### Builder [9a6851a..a5f91ca](https://github.com/songchenwen/nanopi-r2s/compare/9a6851a..a5f91ca)
