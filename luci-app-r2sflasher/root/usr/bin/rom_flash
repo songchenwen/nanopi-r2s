@@ -32,7 +32,7 @@ cd $workingdir
 inputfile=$1
 nobackup=$2
 lomntpoint=/mnt/img
-backupfile=/tmp/backup.tar.gz
+backupfile=$workingdir/backup.tar.gz
 
 if [ "$inputfile" == "" ];then
    echo "需要传入 ROM zip 文件"
