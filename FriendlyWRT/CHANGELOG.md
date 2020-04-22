@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-23-099d874
+
+#### ServerChan [c15251d..cd9cf97](https://github.com/tty228/luci-app-serverchan/compare/c15251d..cd9cf97)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cd9cf97](https://github.com/tty228/luci-app-serverchan/commit/cd9cf97) | tty228 | v1.78 |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-22-099d874
 
 #### Builder [a5f91ca..099d874](https://github.com/songchenwen/nanopi-r2s/compare/a5f91ca..099d874)
