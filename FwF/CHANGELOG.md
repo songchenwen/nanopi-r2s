@@ -1,3 +1,26 @@
+## FwF-2020-04-23-29cf7e9
+
+#### ServerChan [c15251d..cd9cf97](https://github.com/tty228/luci-app-serverchan/compare/c15251d..cd9cf97)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [cd9cf97](https://github.com/tty228/luci-app-serverchan/commit/cd9cf97) | tty228 | v1.78 |
+
+
+#### Builder [a5f91ca..29cf7e9](https://github.com/songchenwen/nanopi-r2s/compare/a5f91ca..29cf7e9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [29cf7e9](https://github.com/songchenwen/nanopi-r2s/commit/29cf7e9) | songchenwen | Add NanoPi R2S OPKG Feeds |
+| [099d874](https://github.com/songchenwen/nanopi-r2s/commit/099d874) | songchenwen | R2S Flasher Change Backup Dir |
+
+
+
+
+--------------
+
 ## FwF-2020-04-21-a5f91ca
 
 #### ServerChan [20d4f2e..c15251d](https://github.com/tty228/luci-app-serverchan/compare/20d4f2e..c15251d)
