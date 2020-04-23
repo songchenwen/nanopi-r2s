@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-23-29cf7e9
+
+#### Builder [099d874..29cf7e9](https://github.com/songchenwen/nanopi-r2s/compare/099d874..29cf7e9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [29cf7e9](https://github.com/songchenwen/nanopi-r2s/commit/29cf7e9) | songchenwen | Add NanoPi R2S OPKG Feeds |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-23-099d874
 
 #### ServerChan [c15251d..cd9cf97](https://github.com/tty228/luci-app-serverchan/compare/c15251d..cd9cf97)
