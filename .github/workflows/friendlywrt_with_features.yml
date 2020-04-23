@@ -122,6 +122,16 @@ jobs:
           echo "cp /usr/lib/netdata/conf.d/charts.d.conf /etc/netdata/" >> friendlywrt/package/base-files/files/root/setup.sh
           echo "echo 'temp=yes' >> /etc/netdata/charts.d.conf" >> friendlywrt/package/base-files/files/root/setup.sh
           echo "/etc/init.d/netdata restart" >> friendlywrt/package/base-files/files/root/setup.sh
+      
+      - name: Add OPKG Feeds
+        if: steps.changelog.outputs.changelog != ''
+        run: |
+          cd friendlywrt-rk3328
+          git clone -b src --depth 1 https://github.com/songchenwen/nanopi-r2s-opkg-feeds.git
+          mkdir -p friendlywrt/package/base-files/files/etc/opkg/keys/
+          cp nanopi-r2s-opkg-feeds/keys/* friendlywrt/package/base-files/files/etc/opkg/keys/
+          rm -rf nanopi-r2s-opkg-feeds
+          echo "grep -qF 'songchenwen.com' /etc/opkg/customfeeds.conf || echo 'src/gz songchenwen https://songchenwen.com/nanopi-r2s-opkg-feeds/packages' >> /etc/opkg/customfeeds.conf" >> friendlywrt/package/base-files/files/root/setup.sh
 
       # - name: Unlock CPU 1.5Ghz
       #   run: |
