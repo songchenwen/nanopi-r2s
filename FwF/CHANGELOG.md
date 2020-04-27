@@ -1,3 +1,30 @@
+## FwF-2020-04-28-29cf7e9
+
+#### Lean [f1c10fd..cbba577](https://github.com/coolsnowwolf/lede/compare/f1c10fd..cbba577)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a56141625](https://github.com/coolsnowwolf/lede/commit/a56141625) | Mattraks | v2ray-plugin:Add GOPROXY support (#4421) |
+| [9206d58b3](https://github.com/coolsnowwolf/lede/commit/9206d58b3) | coolsnowwolf | luci-app-ipsec-vpnd: fix outboud rules with some China android phones |
+| [fcfde0357](https://github.com/coolsnowwolf/lede/commit/fcfde0357) | coolsnowwolf | UnblockNeteaseMusic: update search api |
+| [ceb6d06fd](https://github.com/coolsnowwolf/lede/commit/ceb6d06fd) | wybb | fix xlnetacc logout (#4422) |
+
+
+#### LeanPackage [f35494f..a54d824](https://github.com/coolsnowwolf/packages/compare/f35494f..a54d824)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6689ca74f](https://github.com/coolsnowwolf/packages/commit/6689ca74f) | KFERMercer | docker-ce: fix build failure |
+| [a3ed719d7](https://github.com/coolsnowwolf/packages/commit/a3ed719d7) | hyird | docer-ce:bump version |
+| [02fdb997e](https://github.com/coolsnowwolf/packages/commit/02fdb997e) | Ken Wong | pigz: add package |
+
+
+
+
+--------------
+
 ## FwF-2020-04-23-29cf7e9
 
 #### ServerChan [c15251d..cd9cf97](https://github.com/tty228/luci-app-serverchan/compare/c15251d..cd9cf97)
