@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-04-29-29cf7e9
+
+#### FriendlyWRT [6025df0..f6e2de1](https://github.com/friendlyarm/friendlywrt/compare/6025df0..f6e2de1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [48b8c9921b](https://github.com/friendlyarm/friendlywrt/commit/48b8c9921b) | Chuck | setup.sh: make sure it's not commented |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-23-29cf7e9
 
 #### Builder [099d874..29cf7e9](https://github.com/songchenwen/nanopi-r2s/compare/099d874..29cf7e9)
