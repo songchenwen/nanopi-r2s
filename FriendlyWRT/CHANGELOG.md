@@ -1,3 +1,27 @@
+## FriendlyWRT-2020-04-30-10a45b1
+
+#### OpenWrt [f57230c](/commit/f57230c)
+
+
+
+
+#### Builder [29cf7e9..10a45b1](https://github.com/songchenwen/nanopi-r2s/compare/29cf7e9..10a45b1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [10a45b1](https://github.com/songchenwen/nanopi-r2s/commit/10a45b1) | songchenwen | Use Chuck's Kernel |
+
+
+#### Kernel [240bef4](/commit/240bef4)
+
+
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-29-29cf7e9
 
 #### FriendlyWRT [6025df0..f6e2de1](https://github.com/friendlyarm/friendlywrt/compare/6025df0..f6e2de1)
