@@ -76,17 +76,37 @@ jobs:
           git config --global user.email "action@github.com" && git config --global user.name "GitHub Action"
           cd friendlywrt-rk3328
           git clone https://github.com/openwrt/openwrt
-          cd openwrt
-          git revert --no-edit d27623b542548b765ddd46b046169006a3b5f66f
-          cd ..
           rm -rf friendlywrt/package/libs
           cp -r openwrt/package/libs friendlywrt/package/
 
-      - name: Install Openwrt octeontx patches
+      - name: Use Chuck's Kernel
         run: |
           cd friendlywrt-rk3328
-          cp -r openwrt/target/linux/octeontx/patches-5.4 friendlywrt/target/linux/rockchip-rk3328/
-          ls friendlywrt/target/linux/rockchip-rk3328/patches-5.4
+          rm -rf kernel
+          git clone --depth=1 https://github.com/fanck0605/friendlywrt-kernel.git kernel
+          cd kernel
+          ../../set_repo_hash.sh Kernel
+          cd ../openwrt
+          ../../set_repo_hash.sh OpenWrt
+          ./scripts/patch-kernel.sh ../kernel target/linux/generic/backport-5.4
+          ./scripts/patch-kernel.sh ../kernel target/linux/generic/pending-5.4
+          ./scripts/patch-kernel.sh ../kernel target/linux/generic/hack-5.4
+          ./scripts/patch-kernel.sh ../kernel target/linux/octeontx/patches-5.4
+          cp -a ./target/linux/generic/files/* ../kernel/
+          cd ../kernel
+          wget -O net/netfilter/xt_FULLCONENAT.c https://raw.githubusercontent.com/Chion82/netfilter-full-cone-nat/master/xt_FULLCONENAT.c
+          wget -O ../fullcone_nat.patch https://github.com/fanck0605/nanopi-r2s/raw/lean/patches/001-kernel-add-full_cone_nat.patch
+          git apply ../fullcone_nat.patch
+          cd ..
+          curl -s https://api.github.com/repos/fanck0605/nanopi-r2s/releases/latest | jq ".zipball_url" | cut -d '"' -f 2 | wget -O fanck.zip -qi -
+          kernelconfig=$(unzip -Z -1 fanck.zip | grep "nanopi-r2_linux_defconfig")
+          if [ "$kernelconfig" == "" ]; then
+            echo "kernelconfig not fount"
+            exit 1
+          fi
+          unzip fanck.zip $kernelconfig
+          mv $kernelconfig kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
+          rm fanck.zip
       
       - name: Change Log
         id: changelog
@@ -110,7 +130,9 @@ jobs:
           sed -i 's/<%=luci.sys.exec("cat \/etc\/bench.log") or " "%>//' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
           sed -i "/redirect_https/d" friendlywrt/package/network/services/uhttpd/files/uhttpd.config
           sed -i '/luciversion/a \/ ${{ steps.changelog.outputs.buildtag }} by <a href="https://songchenwen.com">scw</a>' friendlywrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+          sed -i '/firewall\.user/d' friendlywrt/package/lean/default-settings/files/zzz-default-settings
           cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
+          cp ../scripts/rom_prepare.sh friendlywrt/package/base-files/files/usr/bin/rom_prepare
 
       - name: Add Temperature to Netdata
         if: steps.changelog.outputs.changelog != ''
@@ -185,7 +207,6 @@ jobs:
         if: steps.changelog.outputs.changelog != ''
         run: |
           cd friendlywrt-rk3328
-          sed -i 's/set -eu/set -u/' scripts/mk-friendlywrt.sh
           ./build.sh nanopi_r2s.mk
 
       # from https://github.com/fanck0605/nanopi_r2s/blob/lean/.github/workflows/main.yml#L87

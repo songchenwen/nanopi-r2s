@@ -20,6 +20,8 @@ FriendlyWRT 和 FwF 是基于官方固件的版本，主要求稳，没有解锁
 
 4月23日之后，有了[专为 NanoPi R2S 准备的软件源](https://songchenwen.com/nanopi-r2s-opkg-feeds/packages)。缺少的包可以自行从源里安装了。
 
+4月30日之后，开始使用 [Chuck 的 Kernel](https://github.com/fanck0605/friendlywrt-kernel)，可以开启 Flow Offload 和 FullCone NAT 了。
+
 Fork 自 [klever1988](https://github.com/klever1988/nanopi-openwrt) 和 [soffchen](https://github.com/soffchen/NanoPi-R2S)
 
 主要整合了 [Passwall](https://github.com/songchenwen/openwrt-package) 和 AdguardHome

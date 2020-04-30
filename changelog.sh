@@ -54,6 +54,9 @@ while read l; do
             if [ "$name" == "FriendlyWRT" ]; then
                 branch="master-v19.07.1"
             fi
+            if [ "$name" == "Kernel" ]; then
+                branch="nanopi-r2-v5.4.y"
+            fi
 
             mkdir -p .temprepo
             cd .temprepo
