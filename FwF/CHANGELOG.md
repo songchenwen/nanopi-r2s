@@ -1,3 +1,45 @@
+## FwF-2020-04-30-10a45b1
+
+#### OpenWrt [f57230c](/commit/f57230c)
+
+
+
+
+#### Builder [29cf7e9..10a45b1](https://github.com/songchenwen/nanopi-r2s/compare/29cf7e9..10a45b1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [10a45b1](https://github.com/songchenwen/nanopi-r2s/commit/10a45b1) | songchenwen | Use Chuck's Kernel |
+
+
+#### FriendlyWRT [6025df0..f6e2de1](https://github.com/friendlyarm/friendlywrt/compare/6025df0..f6e2de1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [48b8c9921b](https://github.com/friendlyarm/friendlywrt/commit/48b8c9921b) | Chuck | setup.sh: make sure it's not commented |
+
+
+#### Kernel [240bef4](/commit/240bef4)
+
+
+
+
+#### Lean [cbba577..f2f84a6](https://github.com/coolsnowwolf/lede/compare/cbba577..f2f84a6)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [f2f84a682e](https://github.com/coolsnowwolf/lede/commit/f2f84a682e) | coolsnowwolf | jquery v3.5.0 mark |
+| [e3e03876c2](https://github.com/coolsnowwolf/lede/commit/e3e03876c2) | coolsnowwolf | add rclone package and luci-app-rclone |
+| [11848e8b43](https://github.com/coolsnowwolf/lede/commit/11848e8b43) | lunatickochiya |  shadowsocksr-libev：reduce file size (#4467) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-28-29cf7e9
 
 #### Lean [f1c10fd..cbba577](https://github.com/coolsnowwolf/lede/compare/f1c10fd..cbba577)
