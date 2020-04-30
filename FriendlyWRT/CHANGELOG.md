@@ -1,3 +1,18 @@
+## FriendlyWRT-2020-05-01-55f162a
+
+#### Builder [10a45b1..55f162a](https://github.com/songchenwen/nanopi-r2s/compare/10a45b1..55f162a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [55f162a](https://github.com/songchenwen/nanopi-r2s/commit/55f162a) | songchenwen | Update  Kernel URL |
+| [c129fd9](https://github.com/songchenwen/nanopi-r2s/commit/c129fd9) | songchenwen | Update README |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-04-30-10a45b1
 
 #### OpenWrt [f57230c](/commit/f57230c)
