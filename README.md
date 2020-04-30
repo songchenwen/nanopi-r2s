@@ -5,7 +5,7 @@
 
 ~~编译了两种固件，分别是基于 Lean 的和基于官方固件的。~~
 
-FriendlyWRT 和 FwF 是基于官方固件的版本，主要求稳，没有解锁 CPU 主频，也没添加 Flow Offload，实测性能够用，温度还低，推荐作为家庭主路由拿来长期使用。
+FriendlyWRT 和 FwF 是基于官方固件的版本，主要求稳，没有解锁 CPU 主频， ~~也没添加 Flow Offload，~~ 实测性能够用，温度还低，推荐作为家庭主路由拿来长期使用。
 
 点击下方固件名字，可找到对应版本固件的最新下载链接。图形化刷机工具 [luci-app-r2sflasher](luci-app-r2sflasher) 的 ipk 安装包也在下载到的 zip 里。
 
