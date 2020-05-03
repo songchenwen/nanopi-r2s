@@ -1,3 +1,25 @@
+## FriendlyWRT-2020-05-04-23a4f41
+
+#### Builder [55f162a..23a4f41](https://github.com/songchenwen/nanopi-r2s/compare/55f162a..23a4f41)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [23a4f41](https://github.com/songchenwen/nanopi-r2s/commit/23a4f41) | songchenwen | Add FullCone NAT Dependencies. |
+
+
+#### Argon [3e41f5b..358e293](https://github.com/jerrykuku/luci-theme-argon/compare/3e41f5b..358e293)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [621d5cf](https://github.com/jerrykuku/luci-theme-argon/commit/621d5cf) | R3pl4c3r | favicon: replaced by icon.png |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-01-55f162a
 
 #### Builder [10a45b1..55f162a](https://github.com/songchenwen/nanopi-r2s/compare/10a45b1..55f162a)
