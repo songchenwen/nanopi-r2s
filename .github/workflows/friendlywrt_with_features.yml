@@ -97,16 +97,16 @@ jobs:
           wget -O net/netfilter/xt_FULLCONENAT.c https://raw.githubusercontent.com/Chion82/netfilter-full-cone-nat/master/xt_FULLCONENAT.c
           wget -O ../fullcone_nat.patch https://github.com/fanck0605/nanopi-r2s/raw/lean/patches/001-kernel-add-full_cone_nat.patch
           git apply ../fullcone_nat.patch
-          cd ..
-          curl -s https://api.github.com/repos/fanck0605/nanopi-r2s/releases/latest | jq ".zipball_url" | cut -d '"' -f 2 | wget -O fanck.zip -qi -
-          kernelconfig=$(unzip -Z -1 fanck.zip | grep "nanopi-r2_linux_defconfig")
-          if [ "$kernelconfig" == "" ]; then
-            echo "kernelconfig not fount"
-            exit 1
-          fi
-          unzip fanck.zip $kernelconfig
-          mv $kernelconfig kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
-          rm fanck.zip
+          # cd ..
+          # curl -s https://api.github.com/repos/fanck0605/nanopi-r2s/releases/latest | jq ".zipball_url" | cut -d '"' -f 2 | wget -O fanck.zip -qi -
+          # kernelconfig=$(unzip -Z -1 fanck.zip | grep "nanopi-r2_linux_defconfig")
+          # if [ "$kernelconfig" == "" ]; then
+          #   echo "kernelconfig not fount"
+          #   exit 1
+          # fi
+          # unzip fanck.zip $kernelconfig
+          # mv $kernelconfig kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
+          # rm fanck.zip
       
       - name: Change Log
         id: changelog
@@ -216,10 +216,10 @@ jobs:
           sudo df -lh
           lodev=$(sudo losetup -f)
           echo "found unused loop dev $lodev"
-          sudo losetup -o 100663296 $lodev friendlywrt-rk3328/out/*.img
+          sudo losetup -P $lodev friendlywrt-rk3328/out/*.img
           sudo rm -rf /mnt/friendlywrt-tmp
           sudo mkdir -p /mnt/friendlywrt-tmp
-          sudo mount $lodev /mnt/friendlywrt-tmp
+          sudo mount ${lodev}p1 /mnt/friendlywrt-tmp
           sudo chown -R root:root /mnt/friendlywrt-tmp
           sudo umount /mnt/friendlywrt-tmp
           sudo losetup -d $lodev
