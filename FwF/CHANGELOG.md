@@ -1,3 +1,39 @@
+## FwF-2020-05-04-3ceb089
+
+#### Builder [10a45b1..3ceb089](https://github.com/songchenwen/nanopi-r2s/compare/10a45b1..3ceb089)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [05dfa4e](https://github.com/songchenwen/nanopi-r2s/commit/05dfa4e) | songchenwen | Merge Chuck's Changes |
+| [6f7092e](https://github.com/songchenwen/nanopi-r2s/commit/6f7092e) | Chuck | r2sflasher: optimize loop device mount |
+| [23a4f41](https://github.com/songchenwen/nanopi-r2s/commit/23a4f41) | songchenwen | Add FullCone NAT Dependencies. |
+| [55f162a](https://github.com/songchenwen/nanopi-r2s/commit/55f162a) | songchenwen | Update  Kernel URL |
+| [c129fd9](https://github.com/songchenwen/nanopi-r2s/commit/c129fd9) | songchenwen | Update README |
+
+
+#### Argon [3e41f5b..358e293](https://github.com/jerrykuku/luci-theme-argon/compare/3e41f5b..358e293)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [621d5cf](https://github.com/jerrykuku/luci-theme-argon/commit/621d5cf) | R3pl4c3r | favicon: replaced by icon.png |
+
+
+#### Lean [f2f84a6..d71dc69](https://github.com/coolsnowwolf/lede/compare/f2f84a6..d71dc69)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d71dc698](https://github.com/coolsnowwolf/lede/commit/d71dc698) | LitingLin | make compatible with new upstream Luci requirement (#4529) |
+| [d0cc3d02](https://github.com/coolsnowwolf/lede/commit/d0cc3d02) | coolsnowwolf | luci-app-qbittorrent: update python3 for search |
+| [21b36d6f](https://github.com/coolsnowwolf/lede/commit/21b36d6f) | ardanzhu | Update to frp 0.33.0 version (#4486) |
+
+
+
+
+--------------
+
 ## FwF-2020-04-30-10a45b1
 
 #### OpenWrt [f57230c](/commit/f57230c)
