@@ -55,6 +55,8 @@ jobs:
           ../../set_repo_hash.sh Lean
           cd ../friendlywrt
           cp -r ../lede/package/lean package/
+          rm -rf package/network/config/firewall
+          cp -r ../lede/package/network/config/firewall package/network/config/
           sed -i 's/^src-git luci.*/src-git luci https:\/\/github.com\/coolsnowwolf\/luci/' feeds.conf.default
           sed -i 's/^src-git packages.*/src-git packages https:\/\/github.com\/coolsnowwolf\/packages/' feeds.conf.default
           ../../set_repo_hash.sh LeanLuci https://github.com/coolsnowwolf/luci.git
