@@ -1,3 +1,18 @@
+## FriendlyWRT-2020-05-04-3ceb089
+
+#### Builder [23a4f41..3ceb089](https://github.com/songchenwen/nanopi-r2s/compare/23a4f41..3ceb089)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [05dfa4e](https://github.com/songchenwen/nanopi-r2s/commit/05dfa4e) | songchenwen | Merge Chuck's Changes |
+| [6f7092e](https://github.com/songchenwen/nanopi-r2s/commit/6f7092e) | Chuck | r2sflasher: optimize loop device mount |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-04-23a4f41
 
 #### Builder [55f162a..23a4f41](https://github.com/songchenwen/nanopi-r2s/compare/55f162a..23a4f41)
