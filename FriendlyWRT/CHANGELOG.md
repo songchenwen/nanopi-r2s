@@ -1,3 +1,25 @@
+## FriendlyWRT-2020-05-04-394c9a4
+
+#### Builder [3ceb089..394c9a4](https://github.com/songchenwen/nanopi-r2s/compare/3ceb089..394c9a4)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [394c9a4](https://github.com/songchenwen/nanopi-r2s/commit/394c9a4) | songchenwen | Fix FullCone NAT in Firewall |
+
+
+#### Argon [358e293..6bab4a8](https://github.com/jerrykuku/luci-theme-argon/compare/358e293..6bab4a8)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [6bab4a8](https://github.com/jerrykuku/luci-theme-argon/commit/6bab4a8) | jerrykuku | fix some display error |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-04-3ceb089
 
 #### Builder [23a4f41..3ceb089](https://github.com/songchenwen/nanopi-r2s/compare/23a4f41..3ceb089)
