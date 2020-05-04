@@ -116,8 +116,8 @@ lodev=$(losetup -f)
 echo "使用设备 $lodev 测试 ROM 文件"
 
 mkdir -p "$lomntpoint"
-losetup -o 100663296 $lodev "$imgfile"
-mount $lodev "$lomntpoint"
+losetup -P $lodev "$imgfile"
+mount ${lodev}p1 "$lomntpoint"
 if [ $? -ne 0 ]; then
     echo "img 文件挂载失败"
     losetup -d $lodev
