@@ -1,3 +1,17 @@
+## FwF-2020-05-05-91af96c
+
+#### Builder [394c9a4..91af96c](https://github.com/songchenwen/nanopi-r2s/compare/394c9a4..91af96c)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [91af96c](https://github.com/songchenwen/nanopi-r2s/commit/91af96c) | songchenwen | Try Deleting NFT Offload |
+
+
+
+
+--------------
+
 ## FwF-2020-05-04-394c9a4
 
 #### Builder [3ceb089..394c9a4](https://github.com/songchenwen/nanopi-r2s/compare/3ceb089..394c9a4)
