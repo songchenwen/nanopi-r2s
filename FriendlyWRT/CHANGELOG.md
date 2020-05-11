@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-05-11-a8d344a
+
+#### Builder [91af96c..a8d344a](https://github.com/songchenwen/nanopi-r2s/compare/91af96c..a8d344a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a8d344a](https://github.com/songchenwen/nanopi-r2s/commit/a8d344a) | songchenwen | User New OPKG Feeds Domain Name |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-05-91af96c
 
 #### Builder [394c9a4..91af96c](https://github.com/songchenwen/nanopi-r2s/compare/394c9a4..91af96c)
