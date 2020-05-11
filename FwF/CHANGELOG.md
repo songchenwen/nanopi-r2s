@@ -1,3 +1,32 @@
+## FwF-2020-05-11-a8d344a
+
+#### Builder [91af96c..a8d344a](https://github.com/songchenwen/nanopi-r2s/compare/91af96c..a8d344a)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [a8d344a](https://github.com/songchenwen/nanopi-r2s/commit/a8d344a) | songchenwen | User New OPKG Feeds Domain Name |
+
+
+#### Lean [5b88cae..1428e0e](https://github.com/coolsnowwolf/lede/compare/5b88cae..1428e0e)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [bd00ced2](https://github.com/coolsnowwolf/lede/commit/bd00ced2) | coolsnowwolf | brcm47xx: let K3 using 160Mhz firmware |
+| [f26c892a](https://github.com/coolsnowwolf/lede/commit/f26c892a) | coolsnowwolf | Version bump to R20.5.9 |
+| [7c2d28fb](https://github.com/coolsnowwolf/lede/commit/7c2d28fb) | manyeechen | npc：bump version to 0.26.7 (#4569) |
+| [b7be5fd5](https://github.com/coolsnowwolf/lede/commit/b7be5fd5) | Hugo Yuan | UnblockNeteaseMusic: bump to 0.25.0 (#4570) |
+| [f231323d](https://github.com/coolsnowwolf/lede/commit/f231323d) | coolsnowwolf | luci-app-frps: fix disable when upgrade |
+| [82792a1d](https://github.com/coolsnowwolf/lede/commit/82792a1d) | HiGarfield | luci-app-openvpn-server: avoid repeated forwarding rules (#4558) |
+| [b6896000](https://github.com/coolsnowwolf/lede/commit/b6896000) | lunatickochiya | luci-app-openvpn-server:add lan to vpn forwarding (#4553) |
+| [b80d00ee](https://github.com/coolsnowwolf/lede/commit/b80d00ee) | lunatickochiya | luci-app-openvpn-server:fix start crash in AR9341 (#4540) |
+
+
+
+
+--------------
+
 ## FwF-2020-05-05-91af96c
 
 #### Builder [394c9a4..91af96c](https://github.com/songchenwen/nanopi-r2s/compare/394c9a4..91af96c)
