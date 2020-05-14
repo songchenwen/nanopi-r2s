@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-05-15-a8d344a
+
+#### FriendlyWRT [f6e2de1..4132f4f](https://github.com/friendlyarm/friendlywrt/compare/f6e2de1..4132f4f)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [4132f4fe51](https://github.com/friendlyarm/friendlywrt/commit/4132f4fe51) | Lawrence-Tang | rk3328: add support for rtl8812au |
+| [4cf743eb54](https://github.com/friendlyarm/friendlywrt/commit/4cf743eb54) | Chuck | rk3328: adapt to rockchip-kernel's HZ settings |
+| [e7952a97a2](https://github.com/friendlyarm/friendlywrt/commit/e7952a97a2) | Chuck | rk3328: remove CONFIG_COMPACTION config |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-11-a8d344a
 
 #### Builder [91af96c..a8d344a](https://github.com/songchenwen/nanopi-r2s/compare/91af96c..a8d344a)
