@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-05-16-7ff9cfd
+
+#### Builder [a8d344a..7ff9cfd](https://github.com/songchenwen/nanopi-r2s/compare/a8d344a..7ff9cfd)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7ff9cfd](https://github.com/songchenwen/nanopi-r2s/commit/7ff9cfd) | songchenwen | R2S Flasher: Fix Loop Mount Test |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-15-a8d344a
 
 #### FriendlyWRT [f6e2de1..4132f4f](https://github.com/friendlyarm/friendlywrt/compare/f6e2de1..4132f4f)
