@@ -10,6 +10,7 @@ on:
       - '.github/workflows/friendlywrt_with_features.yml'
       - 'features.seed'
       - '*.sh'
+      - 'luci-app-r2sflasher'
   schedule:
     - cron: '50 19 * * 1'
 

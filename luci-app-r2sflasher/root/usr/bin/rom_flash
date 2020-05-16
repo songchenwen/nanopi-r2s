@@ -128,7 +128,7 @@ fi
 
 cd "$lomntpoint"
 imgbindir=$(ls | grep "bin")
-if [ imgbindir == "" ]; then
+if [ "$imgbindir" == "" ]; then
     echo "img 文件错误"
     cd /root
     umount "$lomntpoint"
