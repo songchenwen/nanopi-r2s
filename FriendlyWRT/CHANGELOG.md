@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-05-19-772dcd8
+
+#### Builder [7ff9cfd..772dcd8](https://github.com/songchenwen/nanopi-r2s/compare/7ff9cfd..772dcd8)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [0e22b19](https://github.com/songchenwen/nanopi-r2s/commit/0e22b19) | Chuck | r2sflash: fix read only filesystem test |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-16-7ff9cfd
 
 #### Builder [a8d344a..7ff9cfd](https://github.com/songchenwen/nanopi-r2s/compare/a8d344a..7ff9cfd)
