@@ -173,6 +173,8 @@ if [ -f "$zstfile" ]; then
     echo u > /proc/sysrq-trigger || umount /
 
     rotestfile="/rotest.txt"
+    # here we rm it first
+    rm -f "$rotestfile"
     touch "$rotestfile"
     if [ $? -eq 0 ]; then
         rm "$rotestfile"
