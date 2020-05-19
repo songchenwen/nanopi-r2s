@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-05-19-ae0868c
+
+#### Builder [772dcd8..ae0868c](https://github.com/songchenwen/nanopi-r2s/compare/772dcd8..ae0868c)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [ae0868c](https://github.com/songchenwen/nanopi-r2s/commit/ae0868c) | songchenwen | Update Clash Binary |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-19-772dcd8
 
 #### Builder [7ff9cfd..772dcd8](https://github.com/songchenwen/nanopi-r2s/compare/7ff9cfd..772dcd8)
