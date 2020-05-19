@@ -167,7 +167,7 @@ jobs:
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
         run: |
-          CLASH_VERSION=v0.19.0
+          CLASH_VERSION=v0.20.0
           mkdir -p friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
           cd friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
           wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
