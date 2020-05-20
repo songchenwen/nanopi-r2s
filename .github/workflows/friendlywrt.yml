@@ -129,6 +129,8 @@ jobs:
           sed -i '/firewall\.user/d' friendlywrt/package/lean/default-settings/files/zzz-default-settings
           cp ../scripts/fw_update.sh friendlywrt/package/base-files/files/usr/bin/fw_update
           cp ../scripts/rom_prepare.sh friendlywrt/package/base-files/files/usr/bin/rom_prepare
+          cp ../scripts/check_net.sh friendlywrt/package/base-files/files/usr/bin/check_net
+          echo "/usr/bin/check_net" >> friendlywrt/package/base-files/files/root/setup.sh
 
       - name: Add Temperature to Netdata
         if: steps.changelog.outputs.changelog != ''
