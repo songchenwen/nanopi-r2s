@@ -1,3 +1,28 @@
+## FwF-2020-05-20-b0a8b83
+
+#### Builder [ae0868c..b0a8b83](https://github.com/songchenwen/nanopi-r2s/compare/ae0868c..b0a8b83)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b0a8b83](https://github.com/songchenwen/nanopi-r2s/commit/b0a8b83) | songchenwen | Add Check Net Script |
+
+
+#### Lean [684c112..93c72e9](https://github.com/coolsnowwolf/lede/compare/684c112..93c72e9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [93c72e99](https://github.com/coolsnowwolf/lede/commit/93c72e99) | coolsnowwolf | default-settings: replace 18.06.8 luci seed |
+| [01045fbb](https://github.com/coolsnowwolf/lede/commit/01045fbb) | lyin | add fuse-utils (#4621) |
+| [31cc9922](https://github.com/coolsnowwolf/lede/commit/31cc9922) | Hugo Yuan | luci-app-unblockmusic: Refresh ipset music list when ifup (#4576) |
+| [4685f86c](https://github.com/coolsnowwolf/lede/commit/4685f86c) | Hugo Yuan | UnblockNeteaseMusic: bump to 0.25.3 (#4624) |
+
+
+
+
+--------------
+
 ## FwF-2020-05-19-ae0868c
 
 #### Builder [772dcd8..ae0868c](https://github.com/songchenwen/nanopi-r2s/compare/772dcd8..ae0868c)
