@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-05-20-b0a8b83
+
+#### Builder [ae0868c..b0a8b83](https://github.com/songchenwen/nanopi-r2s/compare/ae0868c..b0a8b83)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b0a8b83](https://github.com/songchenwen/nanopi-r2s/commit/b0a8b83) | songchenwen | Add Check Net Script |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-19-ae0868c
 
 #### Builder [772dcd8..ae0868c](https://github.com/songchenwen/nanopi-r2s/compare/772dcd8..ae0868c)
