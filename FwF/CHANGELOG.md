@@ -1,3 +1,27 @@
+## FwF-2020-05-26-b0a8b83
+
+#### ServerChan [cd9cf97..db547c1](https://github.com/tty228/luci-app-serverchan/compare/cd9cf97..db547c1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [db547c1](https://github.com/tty228/luci-app-serverchan/commit/db547c1) | tty228 | update |
+
+
+#### Lean [93c72e9..79c0755](https://github.com/coolsnowwolf/lede/compare/93c72e9..79c0755)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [79c075567](https://github.com/coolsnowwolf/lede/commit/79c075567) | coolsnowwolf | Revert "luci-app-ipsec-vpnd: fix outboud rules with some China android phones" |
+| [db57362a9](https://github.com/coolsnowwolf/lede/commit/db57362a9) | monsterzzzz | make luci cifsd force_root option work (#4657) |
+| [35d87d547](https://github.com/coolsnowwolf/lede/commit/35d87d547) | coolsnowwolf | ksmbd: bump version |
+
+
+
+
+--------------
+
 ## FwF-2020-05-20-b0a8b83
 
 #### Builder [ae0868c..b0a8b83](https://github.com/songchenwen/nanopi-r2s/compare/ae0868c..b0a8b83)
