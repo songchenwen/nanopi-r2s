@@ -1,3 +1,17 @@
+## FwF-2020-06-02-7707052
+
+#### Lean [939405f..d42b563](https://github.com/coolsnowwolf/lede/compare/939405f..d42b563)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d42b563e](https://github.com/coolsnowwolf/lede/commit/d42b563e) | Max Zhao | v2ray-plugin: update to 1.3.1 (#4709) |
+
+
+
+
+--------------
+
 ## FwF-2020-06-01-7707052
 
 #### Builder [b0a8b83..7707052](https://github.com/songchenwen/nanopi-r2s/compare/b0a8b83..7707052)
