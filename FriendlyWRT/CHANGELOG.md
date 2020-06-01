@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-06-01-7707052
+
+#### Builder [b0a8b83..7707052](https://github.com/songchenwen/nanopi-r2s/compare/b0a8b83..7707052)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7707052](https://github.com/songchenwen/nanopi-r2s/commit/7707052) | songchenwen | Fix FullCone Nat Patch |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-05-28-b0a8b83
 
 #### FriendlyWRT [4132f4f..b2b9dc9](https://github.com/friendlyarm/friendlywrt/compare/4132f4f..b2b9dc9)
