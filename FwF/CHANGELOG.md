@@ -1,3 +1,41 @@
+## FwF-2020-06-01-7707052
+
+#### Builder [b0a8b83..7707052](https://github.com/songchenwen/nanopi-r2s/compare/b0a8b83..7707052)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [7707052](https://github.com/songchenwen/nanopi-r2s/commit/7707052) | songchenwen | Fix FullCone Nat Patch |
+
+
+#### FriendlyWRT [4132f4f..b2b9dc9](https://github.com/friendlyarm/friendlywrt/compare/4132f4f..b2b9dc9)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [b2b9dc9763](https://github.com/friendlyarm/friendlywrt/commit/b2b9dc9763) | Lawrence-Tang | lcd2usb_echo: display cpu temperature and ip on lcd1602 |
+
+
+#### Lean [79c0755..939405f](https://github.com/coolsnowwolf/lede/compare/79c0755..939405f)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [939405f2cc](https://github.com/coolsnowwolf/lede/commit/939405f2cc) | Max Zhao | v2ray: update v2ray-core to 4.23.2 (#4705) |
+| [ef2ebeeec4](https://github.com/coolsnowwolf/lede/commit/ef2ebeeec4) | Kuma | Update UnblockNeteaseMusicGo server.crt (#4697) |
+| [297a116933](https://github.com/coolsnowwolf/lede/commit/297a116933) | R3pl4c3r | luci-app-docker: rename dockerman (#4704) |
+| [0f9db42950](https://github.com/coolsnowwolf/lede/commit/0f9db42950) | AmadeusGhost | baidupcs-web: correct download for arm (#4695) |
+| [ab7e53e9ce](https://github.com/coolsnowwolf/lede/commit/ab7e53e9ce) | coolsnowwolf | baidupcs-web: fix token and add aira2 support |
+| [1be41d9899](https://github.com/coolsnowwolf/lede/commit/1be41d9899) | coolsnowwolf | ipt2socks: bump to 1.1.2 fix udp relay bug |
+| [458564b2b9](https://github.com/coolsnowwolf/lede/commit/458564b2b9) | coolsnowwolf | luci-app-adbyby-plus: add block douyin option |
+| [f3339baf3c](https://github.com/coolsnowwolf/lede/commit/f3339baf3c) | coolsnowwolf | luci-app-unblockmusic: add force replace lower than 320kbps option |
+| [b32a75ed69](https://github.com/coolsnowwolf/lede/commit/b32a75ed69) | coolsnowwolf | luci-app-unblockmusic: fix unlock PC and iOS at the same time in nodejs version |
+
+
+
+
+--------------
+
 ## FwF-2020-05-26-b0a8b83
 
 #### ServerChan [cd9cf97..db547c1](https://github.com/tty228/luci-app-serverchan/compare/cd9cf97..db547c1)
