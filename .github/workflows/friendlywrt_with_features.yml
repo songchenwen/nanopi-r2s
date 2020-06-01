@@ -98,7 +98,7 @@ jobs:
           cp -a ./target/linux/generic/files/* ../kernel/
           cd ../kernel
           wget -O net/netfilter/xt_FULLCONENAT.c https://raw.githubusercontent.com/Chion82/netfilter-full-cone-nat/master/xt_FULLCONENAT.c
-          wget -O ../fullcone_nat.patch https://github.com/fanck0605/nanopi-r2s/raw/lean/patches/001-kernel-add-full_cone_nat.patch
+          wget -O ../fullcone_nat.patch https://github.com/fanck0605/nanopi-r2s/raw/openwrt-lienol/patches/001-kernel-add-full_cone_nat.patch
           git apply ../fullcone_nat.patch
           # cd ..
           # curl -s https://api.github.com/repos/fanck0605/nanopi-r2s/releases/latest | jq ".zipball_url" | cut -d '"' -f 2 | wget -O fanck.zip -qi -
