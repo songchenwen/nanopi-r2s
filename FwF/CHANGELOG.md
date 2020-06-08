@@ -1,3 +1,22 @@
+## FwF-2020-06-09-7707052
+
+#### Lean [d42b563..901efc2](https://github.com/coolsnowwolf/lede/compare/d42b563..901efc2)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [901efc2d](https://github.com/coolsnowwolf/lede/commit/901efc2d) | Chuck | default-settings: i18n: add space between Chinese and English characters (#4616) |
+| [6ac928f1](https://github.com/coolsnowwolf/lede/commit/6ac928f1) | ElonH | Rclone-OpenWRT: upgrade (#4737) |
+| [340f1bff](https://github.com/coolsnowwolf/lede/commit/340f1bff) | coolsnowwolf | ps3netsrv: add ps3netsrv allows you to stream games and ISOs over the network to your CFW PlayStation(R) 3 system |
+| [4b97e2a8](https://github.com/coolsnowwolf/lede/commit/4b97e2a8) | hyird | luci-app-frpc:fix translate (#4726) |
+| [ee958e2b](https://github.com/coolsnowwolf/lede/commit/ee958e2b) | Aaron-lv | Update v2ray-core to 4.23.4 (#4725) |
+| [e2bbcd5a](https://github.com/coolsnowwolf/lede/commit/e2bbcd5a) | Zeezorn | update v2ray-core to 4.23.3 (#4716) |
+
+
+
+
+--------------
+
 ## FwF-2020-06-02-7707052
 
 #### Lean [939405f..d42b563](https://github.com/coolsnowwolf/lede/compare/939405f..d42b563)
