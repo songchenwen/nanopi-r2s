@@ -1,6 +1,7 @@
 #!/bin/bash
 
 scriptpath=/usr/bin/check_net
+hotplugpath=/etc/hotplug.d/iface/10-checknet
 
 realrun="$1"
 
@@ -96,9 +97,18 @@ adduci() {
 	fi
 }
 
+addhotplug() {
+	if ! [ -f "$hotplugpath" ]; then
+		cat <<< "#!/bin/sh
+$(echo $scriptpath)">"$hotplugpath"
+		chmod +x "$hotplugpath"
+	fi
+}
+
 if [ "$realrun" == "" ]; then
 	checkrunning 2
 	adduci
+	addhotplug
 	logger 'CheckNet: delay check 30 secs'
 	(sleep 30 && $scriptpath realrun)&
 else
