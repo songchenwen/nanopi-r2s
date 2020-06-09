@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-06-10-8affca1
+
+#### Builder [7707052..8affca1](https://github.com/songchenwen/nanopi-r2s/compare/7707052..8affca1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8affca1](https://github.com/songchenwen/nanopi-r2s/commit/8affca1) | songchenwen | Check Net Script in Hotplug.d |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-06-01-7707052
 
 #### Builder [b0a8b83..7707052](https://github.com/songchenwen/nanopi-r2s/compare/b0a8b83..7707052)
