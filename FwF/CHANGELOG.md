@@ -1,3 +1,47 @@
+## FwF-2020-06-16-8affca1
+
+#### Builder [7707052..8affca1](https://github.com/songchenwen/nanopi-r2s/compare/7707052..8affca1)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8affca1](https://github.com/songchenwen/nanopi-r2s/commit/8affca1) | songchenwen | Check Net Script in Hotplug.d |
+
+
+#### Lean [901efc2..70a9891](https://github.com/coolsnowwolf/lede/compare/901efc2..70a9891)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [70a9891f](https://github.com/coolsnowwolf/lede/commit/70a9891f) | Lienol | luci-app-kodexplorer: update api new version (#4788) |
+| [f4e6ac28](https://github.com/coolsnowwolf/lede/commit/f4e6ac28) | AmadeusGhost | verysync: add auto select latest version support (#4790) |
+| [55c5c30b](https://github.com/coolsnowwolf/lede/commit/55c5c30b) | ElonH | rclone: Bump version to 1.52.1 (#4805) |
+| [4db833bf](https://github.com/coolsnowwolf/lede/commit/4db833bf) | ElonH | RcloneNg: bump version to 0.3.2 (#4810) |
+| [cad7fb2a](https://github.com/coolsnowwolf/lede/commit/cad7fb2a) | coolsnowwolf | luci-app-ps3netsrv: add package luci |
+| [5715e22b](https://github.com/coolsnowwolf/lede/commit/5715e22b) | swxk | Update trojan 1.16.0 (#4772) |
+| [ad0a71da](https://github.com/coolsnowwolf/lede/commit/ad0a71da) | ElonH | luci-app-nps: monitor uci configuration changes (#4784) |
+| [299da0ae](https://github.com/coolsnowwolf/lede/commit/299da0ae) | hyird | Update Makefile (#4776) |
+| [8bf7ff91](https://github.com/coolsnowwolf/lede/commit/8bf7ff91) | Jun Liu | V2ray hash fix (#4773) |
+| [468b3f56](https://github.com/coolsnowwolf/lede/commit/468b3f56) | barton0426 | Update v2ray version to v4.24.2 (#4771) |
+| [e707c9fb](https://github.com/coolsnowwolf/lede/commit/e707c9fb) | AmadeusGhost | verysync: update to 1.4.1 (#4765) |
+| [4676dd36](https://github.com/coolsnowwolf/lede/commit/4676dd36) | coolsnowwolf | luci-app-unblockmusic: allow  revert to <320Kbps mp3 |
+| [4798e531](https://github.com/coolsnowwolf/lede/commit/4798e531) | coolsnowwolf | luci-app-unblockmusic: fix update version display |
+| [23699790](https://github.com/coolsnowwolf/lede/commit/23699790) | ElonH | RcloneNg: bump version to 0.3.0 (#4757) |
+| [bae6e7fc](https://github.com/coolsnowwolf/lede/commit/bae6e7fc) | hyird | luci-app-frpc: add plugin "https2http" (#4754) |
+
+
+#### LeanPackage [fb5c034..ca83778](https://github.com/coolsnowwolf/packages/compare/fb5c034..ca83778)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [8c2bd4fe8](https://github.com/coolsnowwolf/packages/commit/8c2bd4fe8) | coolsnowwolf | qemu-ga: add shutdown command support |
+
+
+
+
+--------------
+
 ## FwF-2020-06-09-7707052
 
 #### Lean [d42b563..901efc2](https://github.com/coolsnowwolf/lede/compare/d42b563..901efc2)
