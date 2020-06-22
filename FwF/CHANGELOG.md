@@ -1,3 +1,27 @@
+## FwF-2020-06-23-8affca1
+
+#### Lean [70a9891..d72f523](https://github.com/coolsnowwolf/lede/compare/70a9891..d72f523)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [bd29eb1a](https://github.com/coolsnowwolf/lede/commit/bd29eb1a) | Xiaok | npc: bump version to v0.26.8 |
+| [617e7f99](https://github.com/coolsnowwolf/lede/commit/617e7f99) | madao | Add ACL file |
+| [e0b2fde7](https://github.com/coolsnowwolf/lede/commit/e0b2fde7) | accors | Update v2ray version to 4.25.0 |
+| [5051acc2](https://github.com/coolsnowwolf/lede/commit/5051acc2) | martin_ni | README.md |
+| [4da8bc11](https://github.com/coolsnowwolf/lede/commit/4da8bc11) | martin_ni | x86: add Realtek r8168 GBE eth support |
+| [fab88b3b](https://github.com/coolsnowwolf/lede/commit/fab88b3b) | martin_ni | bump to 8.048.03 |
+| [9ea9b0ce](https://github.com/coolsnowwolf/lede/commit/9ea9b0ce) | martin_ni | bump to 8.048.03 |
+| [d3cc42ca](https://github.com/coolsnowwolf/lede/commit/d3cc42ca) | coolsnowwolf | ipt2socks:bump to 1.1.3 |
+| [acb82218](https://github.com/coolsnowwolf/lede/commit/acb82218) | coolsnowwolf | luci-app-unblockmusic:change default Nodejs version value |
+| [c252faf6](https://github.com/coolsnowwolf/lede/commit/c252faf6) | coolsnowwolf | Version bump to R20.6.18 |
+| [95d52b60](https://github.com/coolsnowwolf/lede/commit/95d52b60) | coolsnowwolf | luci-app-unblockmusic: fix golang version can't unlock iOS newversion issue |
+
+
+
+
+--------------
+
 ## FwF-2020-06-16-8affca1
 
 #### Builder [7707052..8affca1](https://github.com/songchenwen/nanopi-r2s/compare/7707052..8affca1)
