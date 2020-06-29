@@ -1,3 +1,43 @@
+## FwF-2020-06-30-8affca1
+
+#### Lean [d72f523..c0f3364](https://github.com/coolsnowwolf/lede/compare/d72f523..c0f3364)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [c0f336497](https://github.com/coolsnowwolf/lede/commit/c0f336497) | coolsnowwolf | baidupcs-web: move to my source |
+| [fb6aeafd1](https://github.com/coolsnowwolf/lede/commit/fb6aeafd1) | coolsnowwolf | redsocks2: disable ss |
+| [b82cf7879](https://github.com/coolsnowwolf/lede/commit/b82cf7879) | coolsnowwolf | gmediarender: move folder |
+| [ab025ed8d](https://github.com/coolsnowwolf/lede/commit/ab025ed8d) | CN_SZTL | redsocks2: fix compatible with openssl 1.1.x, support reuseport |
+| [fc6930876](https://github.com/coolsnowwolf/lede/commit/fc6930876) | zhusir | update v2ray version to 4.25.1 |
+| [f3225f677](https://github.com/coolsnowwolf/lede/commit/f3225f677) | goldkeyber112 | bump to 9.003.05 |
+| [5be827d9f](https://github.com/coolsnowwolf/lede/commit/5be827d9f) | liuran001 | fix baidupcs-go |
+| [e0305c807](https://github.com/coolsnowwolf/lede/commit/e0305c807) | AmadeusGhost | r8168: cancel default selection |
+| [420e0e857](https://github.com/coolsnowwolf/lede/commit/420e0e857) | deadlineOvO | /sbin/mtkwifi 777 to 755 |
+| [7b9d809ba](https://github.com/coolsnowwolf/lede/commit/7b9d809ba) | dingpengyu | 修改 Lazy Rule 和 Video Rule条目 |
+| [925abfd27](https://github.com/coolsnowwolf/lede/commit/925abfd27) | dingpengyu | 更新 more.zh-cn.po 修复 restart 翻译 — 中文（中国）: 重启, ID: 150 start 翻译 — 中文（中国）: 启动, ID: 151 stop 翻译 — 中文（中国）: 关闭, ID: 152 三个字符串的翻译错误 |
+| [da331c5b3](https://github.com/coolsnowwolf/lede/commit/da331c5b3) | dingpengyu | 更新 webadmin.po 修复符号 |
+| [5d4990f22](https://github.com/coolsnowwolf/lede/commit/5d4990f22) | dingpengyu | 更新 vsftpd.po 修复符号 |
+| [5d17318c3](https://github.com/coolsnowwolf/lede/commit/5d17318c3) | dingpengyu | 更新 samba4.po 修复符号 |
+| [af7295a7e](https://github.com/coolsnowwolf/lede/commit/af7295a7e) | dingpengyu | remove |
+| [c721c2768](https://github.com/coolsnowwolf/lede/commit/c721c2768) | dingpengyu | 更新 luci-app-rclone.po 修复条目排序 |
+| [626b393bf](https://github.com/coolsnowwolf/lede/commit/626b393bf) | dingpengyu | 统一翻译目录结构 |
+| [90e04aa14](https://github.com/coolsnowwolf/lede/commit/90e04aa14) | dingpengyu | 更新 qbittorrent.po 翻译新条目 修复符号 |
+| [edb935388](https://github.com/coolsnowwolf/lede/commit/edb935388) | dingpengyu | 更新 pppoe-relay.po 修复符号 |
+| [9e09f3fbd](https://github.com/coolsnowwolf/lede/commit/9e09f3fbd) | dingpengyu | 更新 nft-qos.po 修复符号 |
+| [1fd9d1de3](https://github.com/coolsnowwolf/lede/commit/1fd9d1de3) | dingpengyu | 更新 forked-daapd.po 修复符号 |
+| [0e9861032](https://github.com/coolsnowwolf/lede/commit/0e9861032) | dingpengyu | 更新 kodexplorer.po 修复符号 |
+| [c01f66c91](https://github.com/coolsnowwolf/lede/commit/c01f66c91) | dingpengyu | 更新 filetransfer.po 优化翻译 |
+| [8dc4c4bf0](https://github.com/coolsnowwolf/lede/commit/8dc4c4bf0) | dingpengyu | 更新 cpufreq.po 修复翻译排序 |
+| [7453ca8d0](https://github.com/coolsnowwolf/lede/commit/7453ca8d0) | dingpengyu | 更新 adbyby.po 修复符号 |
+| [4832be27f](https://github.com/coolsnowwolf/lede/commit/4832be27f) | dingpengyu | 更新 luci-i18n-sqm.po 修复翻译条目 |
+| [c873f61bb](https://github.com/coolsnowwolf/lede/commit/c873f61bb) | dingpengyu | Poedit 自动修复了“more.zh-cn.po”文件中的无效内容。 该文件中包含重复的项目，这是不允许的，并且影响了该文件被使用。Poedit 修复了该问题，但您应该审阅任何已被标记为“需要处理”的翻译和纠正它们（如有必要）。 |
+
+
+
+
+--------------
+
 ## FwF-2020-06-23-8affca1
 
 #### Lean [70a9891..d72f523](https://github.com/coolsnowwolf/lede/compare/70a9891..d72f523)
