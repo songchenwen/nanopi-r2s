@@ -1,3 +1,17 @@
+## FriendlyWRT-2020-07-01-935c67b
+
+#### Builder [8affca1..935c67b](https://github.com/songchenwen/nanopi-r2s/compare/8affca1..935c67b)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [935c67b](https://github.com/songchenwen/nanopi-r2s/commit/935c67b) | songchenwen | Enable Check Net Script |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-06-10-8affca1
 
 #### Builder [7707052..8affca1](https://github.com/songchenwen/nanopi-r2s/compare/7707052..8affca1)
