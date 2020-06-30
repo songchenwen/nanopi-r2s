@@ -61,7 +61,7 @@ realrun() {
 	    fi
 
 	    logger 'CheckNet: Network problem! Firewall reloading...'
-	    # /etc/init.d/firewall reload >/dev/null 2>&1
+	    /etc/init.d/firewall reload >/dev/null 2>&1
 	    sleep 2s
 
 	    if ping -W 1 -c 1 "$lan_addr" >/dev/null 2>&1; then
@@ -69,7 +69,7 @@ realrun() {
 	    fi
 
 	    logger 'CheckNet: Network problem! Network reloading...'
-	    # /etc/init.d/network restart >/dev/null 2>&1
+	    /etc/init.d/network restart >/dev/null 2>&1
 	    sleep 2s
 	  fi
 	done
