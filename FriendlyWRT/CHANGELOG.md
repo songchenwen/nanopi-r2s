@@ -1,3 +1,19 @@
+## FriendlyWRT-2020-07-04-935c67b
+
+#### Argon [6bab4a8..d4b2541](https://github.com/jerrykuku/luci-theme-argon/compare/6bab4a8..d4b2541)
+
+
+| Commit | Author | Desc |
+| :----- | :------| :--- |
+| [d4b2541](https://github.com/jerrykuku/luci-theme-argon/commit/d4b2541) | jerrykuku | Update style.css |
+| [b9a2dde](https://github.com/jerrykuku/luci-theme-argon/commit/b9a2dde) | jerrykuku | update readme |
+| [86f9b0a](https://github.com/jerrykuku/luci-theme-argon/commit/86f9b0a) | jerrykuku | fix display bugs |
+
+
+
+
+--------------
+
 ## FriendlyWRT-2020-07-01-935c67b
 
 #### Builder [8affca1..935c67b](https://github.com/songchenwen/nanopi-r2s/compare/8affca1..935c67b)
