@@ -11,8 +11,6 @@ on:
       - 'features.seed'
       - '*.sh'
       - 'luci-app-r2sflasher'
-  schedule:
-    - cron: '50 19 * * 1'
 
 jobs:
   build:
@@ -91,6 +89,7 @@ jobs:
           ../../set_repo_hash.sh Kernel
           cd ../openwrt
           ../../set_repo_hash.sh OpenWrt
+          rm -f target/linux/generic/pending-5.4/834-ledtrig-libata.patch
           ./scripts/patch-kernel.sh ../kernel target/linux/generic/backport-5.4
           ./scripts/patch-kernel.sh ../kernel target/linux/generic/pending-5.4
           ./scripts/patch-kernel.sh ../kernel target/linux/generic/hack-5.4
@@ -169,7 +168,7 @@ jobs:
       - name: Download Clash Binary
         if: steps.changelog.outputs.changelog != ''
         run: |
-          CLASH_VERSION=v0.20.0
+          CLASH_VERSION=v1.0.0
           mkdir -p friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
           cd friendlywrt-rk3328/friendlywrt/package/base-files/files/usr/bin
           wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/$CLASH_VERSION/clash-linux-armv8-$CLASH_VERSION.gz
